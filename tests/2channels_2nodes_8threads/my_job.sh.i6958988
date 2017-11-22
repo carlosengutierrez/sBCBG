@@ -1,0 +1,80 @@
+Job Information
+
+ JOB ID                    : 6958988
+ JOB NAME                  : my_job.sh
+ JOB TYPE                  : BATCH
+ JOB MODEL                 : NM
+ RETRY NUM                 : 0
+ SUB JOB NUM               : -
+ USER                      : k03437
+ GROUP                     : hp160266
+ RESOURCE UNIT             : common
+ RESOURCE GROUP            : small
+ PRIORITY                  : 90
+ SHELL                     : /bin/bash
+ COMMENT                   : 
+ LAST STATE                : SOT
+ STATE                     : EXT
+ PRM DATE                  : 2017/11/01 18:25:28
+ EXIT CODE                 : 0
+ SIGNAL NO                 : 0
+ PJM CODE                  : 0
+ REASON                    : -
+ MAIL SEND FLAG            : be--
+ MAIL ADDRESS              : k03437
+ STEP DEPENDENCY EXP       : -
+ STEP EXITING WAIT MODE    : -
+ FILE MASK                 : 0022
+ STANDARD OUT FILE         : /volume2/home/hp160266/k03437/sBCBG/2017_11_1_18_13_00000/my_job.sh.o6958988
+ STANDARD ERR FILE         : /volume2/home/hp160266/k03437/sBCBG/2017_11_1_18_13_00000/my_job.sh.e6958988
+ INFORMATION FILE          : /volume2/home/hp160266/k03437/sBCBG/2017_11_1_18_13_00000/my_job.sh.i6958988
+ ACCEPT DATE               : 2017/11/01 18:13:20
+ QUEUED DATE               : 2017/11/01 18:13:20
+ EXIT DATE                 : 2017/11/01 18:25:50
+ LAST HOLD USER            : 
+ HOLD NUM                  : 0
+ HOLD TIME                 : 00:00:00 (0)
+ JOB START DATE            : 2017/11/01 18:14:46
+ JOB END DATE              : 2017/11/01 18:25:28
+ STAGE IN START DATE       : 2017/11/01 18:14:01
+ STAGE IN END DATE         : 2017/11/01 18:14:25
+ STAGE IN SIZE             : 120.1 MB (120059447)
+ STAGE OUT START DATE      : 2017/11/01 18:25:40
+ STAGE OUT END DATE        : 2017/11/01 18:25:41
+ STAGE OUT SIZE            : 0.7 MB (610100)
+ NODE NUM (REQUIRE)        : 2
+ CPU NUM (REQUIRE)         : 16
+ ELAPSE TIME (LIMIT)       : 23:30:00 (84600)
+ MEMORY SIZE (LIMIT)       : 14252.7 MiB (14945000000) <DEFAULT>
+ DISK SIZE (LIMIT)         : 14000.0 MB (14000000000) <DEFAULT>
+ CPU TIME (LIMIT)          : unlimited <DEFAULT>
+ PROC CPU LIMIT            : unlimited <DEFAULT>
+ PROC COREFILE LIMIT       : 0.0 MB (0) <DEFAULT>
+ PROC CREATE PROC LIMIT    : 1280 <DEFAULT>
+ PROC DATA LIMIT           : unlimited <DEFAULT>
+ PROC LOCKED MEMORY LIMIT  : unlimited <DEFAULT>
+ PROC MESSAGE QUEUE LIMIT  : unlimited <DEFAULT>
+ PROC OPEN FILES LIMIT     : 1024 <DEFAULT>
+ PROC PENDING SIGNAL LIMIT : unlimited <DEFAULT>
+ PROC PERMFILE LIMIT       : unlimited <DEFAULT>
+ PROC STACK LIMIT          : 14252.7 MiB (14945000000) <DEFAULT>
+ PROC VIRTUAL MEMORY LIMIT : unlimited <DEFAULT>
+ NODE NUM (ALLOC)          : 12:2x3x2
+ MEMORY SIZE (ALLOC)       : 14252.7 MiB (14945001472)
+ CPU NUM (ALLOC)           : 16
+ ELAPSE TIME (USE)         : 00:10:43 (643)
+ NODE NUM (UNUSED)         : 0
+ NODE NUM (USE)            : 2
+ NODE ID (USE)             : 0x04130010 0x04130011 
+ TOFU COORDINATE (USE)     : (21,1,1) (21,1,1) 
+ MAX MEMORY SIZE (USE)     : 248.3 MiB (260333568)
+ CPU NUM (USE)             : 16
+ USER CPU TIME (USE)       : 7450090 ms
+ SYSTEM CPU TIME (USE)     : 2641310 ms
+ CPU TIME (TOTAL)          : 10091400 ms
+ DISK SIZE (USE)           : -
+ I/O SIZE                  : 83.8 MB (83768811)
+ FILE I/O SIZE             : 42.7 MB (42692458)
+ EXEC INST NUM             : 0
+ EXEC SIMD NUM             : 17992351425
+
