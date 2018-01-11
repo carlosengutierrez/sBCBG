@@ -131,7 +131,7 @@ params = {'nbcpu':    %s,
                 '#PJM -m e \n',
                 '#PJM --rsc-list \"rscgrp=small\" \n',
                 '#PJM --rsc-list \"node='+testedParameters['nbnodes']+'\" \n',
-                '#PJM --rsc-list \"elapse=23:30:00\" \n',
+                '#PJM --rsc-list \"elapse=23:50:00\" \n',
                 '#PJM --mpi \"proc='+testedParameters['nbnodes']+'\" \n',
                 '#PJM -s \n',
                 '#PJM --stg-transfiles all \n',
@@ -173,7 +173,7 @@ params = {'nbcpu':    %s,
 
 #===============================
 
-my_scale = 1. #scale nodes
+my_scale = 20. #scale nodes
 
 # with which additional parameters?
 testedParameters={'durationH':    '04',
@@ -181,16 +181,16 @@ testedParameters={'durationH':    '04',
                   'nbcpu':'8',#str(int(2*my_scale)),#'8' #number of threads --> up to 8 for K
                   'nbnodes':str(int(2*my_scale)), #number of nodes, cpus
                   'whichTest':'testChannelBG',#'testFullBG',#'testChannelBG',
-                  'nbch': 20, #number of channels
+                  'nbch': 1000, #number of channels
                   'lg14modelid':  9,
-                  'nbmsn':2644.,
-                  'nbfsi':  53.,
-                  'nbstn':   8.,
-                  'nbgpe':  25.,
-                  'nbgpi':  14.,
-                  'nbcsn':3000.,
-                  'nbptn': 100.,
-                  'nbcmpf':  9.,
+                  'nbmsn':2644.,#*my_scale,
+                  'nbfsi':  53.,#*my_scale,
+                  'nbstn':   8.,#*my_scale,
+                  'nbgpe':  25.,#*my_scale,
+                  'nbgpi':  14.,#*my_scale,
+                  'nbcsn':3000.,#*my_scale,
+                  'nbptn': 100.,#*my_scale,
+                  'nbcmpf':  9.,#*my_scale,
                   'gmsn':    4.,
                   'gfsi':    1.,
                   'gstn':    1.4,
@@ -203,14 +203,14 @@ testedParameters={'durationH':    '04',
 testedParametersIntervals = {}
 
 testedParametersIntervals['lg14modelid']=[9.]
-testedParametersIntervals['nbmsn']=[2644.]
-testedParametersIntervals['nbfsi']=[  53.]
-testedParametersIntervals['nbstn']=[   8.]
-testedParametersIntervals['nbgpe']=[  25.]
-testedParametersIntervals['nbgpi']=[  14.]
-testedParametersIntervals['nbcsn']=[3000.]
-testedParametersIntervals['nbptn']=[ 100.]
-testedParametersIntervals['nbcmpf']=[  9.]
+testedParametersIntervals['nbmsn']=[2644.]#*my_scale]
+testedParametersIntervals['nbfsi']=[  53.]#*my_scale]
+testedParametersIntervals['nbstn']=[   8.]#*my_scale]
+testedParametersIntervals['nbgpe']=[  25.]#*my_scale]
+testedParametersIntervals['nbgpi']=[  14.]#*my_scale]
+testedParametersIntervals['nbcsn']=[3000.]#*my_scale]
+testedParametersIntervals['nbptn']=[ 100.]#*my_scale]
+testedParametersIntervals['nbcmpf']=[  9.]#*my_scale]
 testedParametersIntervals['gmsn']=[4.]
 testedParametersIntervals['gfsi']=[1.]
 testedParametersIntervals['gstn']=[1.4]

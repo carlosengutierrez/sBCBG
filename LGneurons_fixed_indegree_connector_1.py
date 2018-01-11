@@ -76,7 +76,7 @@ def create(name,fake=False,parrot=True):
     Pop[name] = nest.Create("iaf_psc_alpha_multisynapse",int(nbSim[name]),params=BGparams[name])
 
 #-------------------------------------------------------------------------------
-# Creates a population of neurons subdivided in Multiple Channels
+# Creates a popolation of neurons subdivided in Multiple Channels
 #
 # name: string naming the population, as defined in NUCLEI list
 # nbCh: integer stating the number of channels to be created
@@ -101,7 +101,6 @@ def createMC(name,nbCh,fake=False,parrot=True):
       for i in range(nbCh):
         Pop[name].append(nest.Create('poisson_generator',int(nbSim[name])))
         nest.SetStatus(Pop[name][i],{'rate':rate[name]})
-      #print 'not parrot : ',Pop[name]
     else:
       for i in range(nbCh):
         Fake[name].append(nest.Create('poisson_generator',int(nbSim[name])))
@@ -109,41 +108,6 @@ def createMC(name,nbCh,fake=False,parrot=True):
         Pop[name].append(nest.Create('parrot_neuron',int(nbSim[name])))
         nest.Connect(pre=Fake[name][i],post=Pop[name][i],conn_spec={'rule':'one_to_one'})
 
-  else:
-    print '* '+name+':',nbSim[name]*nbCh,'neurons (divided in',nbCh,'channels) with parameters:',BGparams[name]
-    for i in range(nbCh):
-      Pop[name].append(nest.Create("iaf_psc_alpha_multisynapse",int(nbSim[name]),params=BGparams[name]))
-
-##### createMC for K computer (not used)#######
-def createMC_K(name,nbCh,fake=False,parrot=True):
-  if nbSim[name] == 0:
-    print 'ERROR: create(): nbSim['+name+'] = 0'
-    exit()
-
-  Pop[name]=[]
-
-  if fake:
-    Fake[name]=[]
-    if rate[name] == 0:
-      print 'ERROR: create(): rate['+name+'] = 0 Hz'
-    print '* '+name+'(fake):',nbSim[name]*nbCh,'Poisson generators (divided in',nbCh,'channels) with avg rate:',rate[name]
-    if not parrot:
-      print "/!\ /!\ /!\ /!\ \nWARNING: parrot neurons not used, no correlations in inputs\n"
-      for i in range(nbCh):
-        pg = nest.Create('poisson_generator',1)
-        nest.SetStatus(pg,{'rate':rate[name]})
-        gen_string = [pg[0]]*int(nbSim[name])
-        Pop[name].append(tuple(gen_string))
-      #print 'not parrot : ',Pop[name]
-    else:
-      for i in range(nbCh):
-        pg = nest.Create('poisson_generator',1)
-        nest.SetStatus(pg,{'rate':rate[name]})
-        gen_string = [pg[0]]*int(nbSim[name])
-        
-        Fake[name].append(tuple(gen_string))
-        Pop[name].append(nest.Create('parrot_neuron',int(nbSim[name])))
-        nest.Connect(pre=Fake[name][i],post=Pop[name][i],conn_spec={'rule':'one_to_one'})
   else:
     print '* '+name+':',nbSim[name]*nbCh,'neurons (divided in',nbCh,'channels) with parameters:',BGparams[name]
     for i in range(nbCh):
@@ -188,25 +152,26 @@ def connect(type,nameSrc,nameTgt,inDegree,LCGDelays=True,gain=1.):
 
   # To ensure that for excitatory connections, Tgt neurons receive AMPA and NMDA projections from the same Src neurons, 
   # we have to handle the "indegree" connectivity ourselves:
-  for nTgt in range(int(nbSim[nameTgt])):
-    if not loadConnectMap:
-    # if no connectivity map exists between the two populations, let's create one
-      inputTable = rnd.choice(int(nbSim[nameSrc]),size=int(inDegree),replace=False)
-      inputPop = []
-      for i in inputTable:
-        inputPop.append(Pop[nameSrc][i])
-      inputPop = tuple(inputPop)
+  # for nTgt in range(int(nbSim[nameTgt])):
+  #   if not loadConnectMap:
+  #   # if no connectivity map exists between the two populations, let's create one
+  #     inputTable = rnd.choice(int(nbSim[nameSrc]),size=int(inDegree),replace=False)
+  #     inputPop = []
+  #     for i in inputTable:
+  #       inputPop.append(Pop[nameSrc][i])
+  #     inputPop = tuple(inputPop)
 
-      ConnectMap[nameSrc+'->'+nameTgt].append(inputPop)
-    else:
-    #otherwise, use the existing one
-      #print nameSrc,"->",nameTgt,"using previously defined connection map"
-      inputPop = ConnectMap[nameSrc+'->'+nameTgt][nTgt]
+  #     ConnectMap[nameSrc+'->'+nameTgt].append(inputPop)
+  #   else:
+    # #otherwise, use the existing one
+    #   #print nameSrc,"->",nameTgt,"using previously defined connection map"
+    #   inputPop = ConnectMap[nameSrc+'->'+nameTgt][nTgt]
 
-    for r in lRecType:
-      w = W[r]
+  for r in lRecType:
+    w = W[r]
 
-      nest.Connect(pre=inputPop, post=(Pop[nameTgt][nTgt],),syn_spec={'receptor_type':recType[r],'weight':w,'delay':delay})
+    #nest.Connect(pre=inputPop, post=(Pop[nameTgt][nTgt],),syn_spec={'receptor_type':recType[r],'weight':w,'delay':delay})
+    nest.Connect(Pop[nameSrc], Pop[nameTgt], conn_spec={'rule': 'fixed_indegree', 'indegree': int(inDegree), 'multapses': False}, syn_spec={'receptor_type':recType[r],'weight':w,'delay':delay})
 
 #-------------------------------------------------------------------------------
 # Establishes a connexion between two populations, following the results of LG14, in a MultiChannel context
@@ -254,60 +219,68 @@ def connectMC(type,nameSrc,nameTgt,projType,inDegree,LCGDelays=True,gain=1.):
   # To ensure that for excitatory connections, Tgt neurons receive AMPA and NMDA projections from the same Src neurons,
   # we have to handle the "indegree" connectivity ourselves:
   for tgtChannel in range(len(Pop[nameTgt])): # for each channel of the Target nucleus
-    for nTgt in range(int(nbSim[nameTgt])): # for each neuron in this channel 
-      if not loadConnectMap:
-      # if no connectivity map exists between the two populations, let's create one
-        if projType =='focused': # if projections focused, input come only from the same channel as tgtChannel
-          inputTable = rnd.choice(int(nbSim[nameSrc]),size=int(inDegree),replace=False)
-          inputPop = []
-          for i in inputTable:
-            inputPop.append(Pop[nameSrc][tgtChannel][i])
-          inputPop = tuple(inputPop)
+    # for nTgt in range(int(nbSim[nameTgt])): # for each neuron in this channel 
+    #   if not loadConnectMap:
+    #   # if no connectivity map exists between the two populations, let's create one
+    #     if projType =='focused': # if projections focused, input come only from the same channel as tgtChannel
+    #       inputTable = rnd.choice(int(nbSim[nameSrc]),size=int(inDegree),replace=False)
+    #       inputPop = []
+    #       for i in inputTable:
+    #         inputPop.append(Pop[nameSrc][tgtChannel][i])
+    #       inputPop = tuple(inputPop)
 
-          ConnectMap[nameSrc+'->'+nameTgt][tgtChannel].append(inputPop)
-        elif projType=='diffuse': # if projections diffused, input connections are shared among each possible input channel equally
-          n = int(inDegree)/int(len(Pop[nameSrc]))
-          r = float(inDegree)/float(len(Pop[nameSrc])) - n
-          inputPop = []
-          #print nameSrc,'->',nameTgt,'#input connections:',n,'(',r,')'
-          for srcChannel in range(len(Pop[nameSrc])):
-            if rnd.rand() < r:
-              nbInPerChannel = n + 1
-            else:
-              nbInPerChannel = n
-            #print '   ',nbInPerChannel
-            inputTable = rnd.choice(int(nbSim[nameSrc]),size=nbInPerChannel,replace=False)
-            for i in inputTable:
-              inputPop.append(Pop[nameSrc][srcChannel][i])
+    #       ConnectMap[nameSrc+'->'+nameTgt][tgtChannel].append(inputPop)
+    #     elif projType=='diffuse': # if projections diffused, input connections are shared among each possible input channel equally
+    #       n = int(inDegree)/int(len(Pop[nameSrc]))
+    #       r = float(inDegree)/float(len(Pop[nameSrc])) - n
+    #       inputPop = []
+    #       #print nameSrc,'->',nameTgt,'#input connections:',n,'(',r,')'
+    #       for srcChannel in range(len(Pop[nameSrc])):
+    #         if rnd.rand() < r:
+    #           nbInPerChannel = n + 1
+    #         else:
+    #           nbInPerChannel = n
+    #         #print '   ',nbInPerChannel
+    #         inputTable = rnd.choice(int(nbSim[nameSrc]),size=nbInPerChannel,replace=False)
+    #         for i in inputTable:
+    #           inputPop.append(Pop[nameSrc][srcChannel][i])
 
-          inputPop = tuple(inputPop)
-          ConnectMap[nameSrc+'->'+nameTgt][tgtChannel].append(inputPop)
-        else:
-          print "Unknown multiple channel connection method",projType
-      else:
-      #otherwise, use the existing one
-        #print nameSrc,"->",nameTgt,"using previously defined connection map"
-        inputPop = ConnectMap[nameSrc+'->'+nameTgt][tgtChannel][nTgt]
-
+    #       inputPop = tuple(inputPop)
+    #       ConnectMap[nameSrc+'->'+nameTgt][tgtChannel].append(inputPop)
+    #     else:
+    #       print "Unknown multiple channel connection method",projType
+    #   else:
+    #   #otherwise, use the existing one
+    #     #print nameSrc,"->",nameTgt,"using previously defined connection map"
+    #     inputPop = ConnectMap[nameSrc+'->'+nameTgt][tgtChannel][nTgt]
+    
+    if projType =='focused':
       for r in lRecType:
         w = W[r]
-        nest.Connect(pre=inputPop, post=(Pop[nameTgt][tgtChannel][nTgt],),syn_spec={'receptor_type':recType[r],'weight':w,'delay':delay})
 
-################## same as connectMC but for K computer #######################
-######### it optimizes the connection time #####################################
-####### not using ConnectMap ##########
+        #nest.Connect(pre=inputPop, post=(Pop[nameTgt][tgtChannel][nTgt],),syn_spec={'receptor_type':recType[r],'weight':w,'delay':delay})
+        nest.Connect(Pop[nameSrc][tgtChannel], Pop[nameTgt][tgtChannel], conn_spec={'rule': 'fixed_indegree', 'indegree': int(inDegree), 'multapses': False}, syn_spec={'receptor_type':recType[r],'weight':w,'delay':delay})
+        
+    elif projType=='diffuse': # if projections diffused, input connections are shared among each possible input channel equally
+      n = int(inDegree)/int(len(Pop[nameSrc]))
+      r = float(inDegree)/float(len(Pop[nameSrc])) - n
+      for srcChannel in range(len(Pop[nameSrc])):
+        if rnd.rand() < r:
+          nbInPerChannel = n + 1
+        else:
+          nbInPerChannel = n
+          
+        for r in lRecType:
+          w = W[r]
 
-def speed_connect(inputPop,nTgtPop,recType,lRecType,W,delay):
-  print 'inputPop',len(inputPop),inputPop.shape
-  print 'post: ',len(nTgtPop),nTgtPop.shape
-  for r in lRecType:
-    w = W[r]
-    nest.Connect(pre=tuple(inputPop.astype('i')), post=tuple(nTgtPop.astype('i')),conn_spec='one_to_one',syn_spec={'receptor_type':recType[r],'weight':w,'delay':delay})
-  return np.array([]),np.array([])
-def handle_pass(inputPop,nTgtPop,recType,lRecType,W,delay):
-  return inputPop,nTgtPop
+          #nest.Connect(pre=inputPop, post=(Pop[nameTgt][tgtChannel][nTgt],),syn_spec={'receptor_type':recType[r],'weight':w,'delay':delay})
+          nest.Connect(Pop[nameSrc][srcChannel], Pop[nameTgt][tgtChannel], conn_spec={'rule': 'fixed_indegree', 'indegree': nbInPerChannel, 'multapses': False}, syn_spec={'receptor_type':recType[r],'weight':w,'delay':delay})
+          
+    else:
+      print "Unknown multiple channel connection method",projType
 
-def connectMC_K(type,nameSrc,nameTgt,projType,inDegree,LCGDelays=True,gain=1.):
+'''
+def connectMC(type,nameSrc,nameTgt,projType,inDegree,LCGDelays=True,gain=1.):
   print "* connecting ",nameSrc,"->",nameTgt,"with",projType,type,"connection and",inDegree,"inputs"
 
   # prepare receptor type lists:
@@ -330,51 +303,43 @@ def connectMC_K(type,nameSrc,nameTgt,projType,inDegree,LCGDelays=True,gain=1.):
     delay = tau[nameSrc+'->'+nameTgt]
   else:
     delay = 1.
-  
-  do_connect = np.array([handle_pass]*len(Pop[nameTgt]))
-  idx_fx = (np.arange(len(Pop[nameTgt])/100)+1)*100-1
-  do_connect[idx_fx] = speed_connect
 
   # To ensure that for excitatory connections, Tgt neurons receive AMPA and NMDA projections from the same Src neurons,
   # we have to handle the "indegree" connectivity ourselves:
   if projType =='focused':
     inputPop, nTgtPop = np.array([]),np.array([])
-    ch_counter = 0
     for tgtChannel in range(len(Pop[nameTgt])): # for each channel of the Target nucleus
-      inputTable = rnd.choice(int(nbSim[nameSrc]),size=int(inDegree)*int(nbSim[nameTgt]),replace=True)
-      inputPop=np.append(inputPop,np.array(Pop[nameSrc][tgtChannel])[inputTable])
-      del inputTable
-      x=np.arange(int(nbSim[nameTgt]))
-      nTgt=np.repeat(x,int(inDegree))
-      del x
-      nTgtPop=np.append(nTgtPop,np.array(Pop[nameTgt][tgtChannel])[nTgt])
-      del nTgt
-      ch_counter+=1
-      inputPop,nTgtPop = do_connect[ch_counter-1](inputPop,nTgtPop,recType,lRecType,W,delay)
- 
+      inputTable = rnd.choice(int(nbSim[nameSrc]),size=int(inDegree)*int(nbSim[nameTgt]),replace=True)#False)
+      inputPop = np.hstack((inputPop,np.array(Pop[nameSrc][tgtChannel])[inputTable]))
+      x = np.arange(int(nbSim[nameTgt]))
+      nTgt = np.repeat(x,int(inDegree))
+      nTgtPop = np.hstack((nTgtPop,np.array(Pop[nameTgt][tgtChannel])[nTgt]))
+    
+    for r in lRecType:
+      w = W[r]
+      nest.Connect(pre=tuple(inputPop.astype('int')), post=tuple(nTgtPop.astype('int')),conn_spec='one_to_one',syn_spec={'receptor_type':recType[r],'weight':w,'delay':delay})
+   
   if projType=='diffuse': # if projections diffused, input connections are shared among each possible input channel equally
     inputPop, nTgtPop = np.array([]),np.array([])
-    ch_counter = 0
     for tgtChannel in range(len(Pop[nameTgt])): # for each channel of the Target nucleus
       n = int(inDegree)/int(len(Pop[nameSrc]))
       r = float(inDegree)/float(len(Pop[nameSrc])) - n
-      my_rand = rnd.rand(len(Pop[nameSrc]))
-      nbInPerChannel = np.zeros(len(Pop[nameSrc])).astype('i')
-      nbInPerChannel[np.argwhere(my_rand  < r)]= n+1
-      nbInPerChannel[np.argwhere(my_rand  >= r)]= n
-      
       for srcChannel in range(len(Pop[nameSrc])):
-        inputTable = rnd.choice(int(nbSim[nameSrc]),size=nbInPerChannel[srcChannel]*int(nbSim[nameTgt]),replace=True)
-        inputPop=np.append(inputPop,np.array(Pop[nameSrc][srcChannel])[inputTable])
-        del inputTable
-        x=np.arange(int(nbSim[nameTgt]))
-        nTgt=np.repeat(x,nbInPerChannel[srcChannel])
-        del x
-        nTgtPop=np.append(nTgtPop,np.array(Pop[nameTgt][tgtChannel])[nTgt])
-        del nTgt
-      ch_counter+=1 
-      inputPop,nTgtPop = do_connect[ch_counter-1](inputPop,nTgtPop,recType,lRecType,W,delay) 
-   
+        if rnd.rand() < r:
+          nbInPerChannel = n + 1
+        else:
+          nbInPerChannel = n
+        inputTable = rnd.choice(int(nbSim[nameSrc]),size=nbInPerChannel*int(nbSim[nameTgt]),replace=True)
+        inputPop = np.hstack((inputPop,np.array(Pop[nameSrc][srcChannel])[inputTable]))
+        x = np.arange(int(nbSim[nameTgt]))
+        nTgt = np.repeat(x,int(nbInPerChannel))
+        nTgtPop = np.hstack((nTgtPop,np.array(Pop[nameTgt][tgtChannel])[nTgt]))
+    
+    for r in lRecType:
+      w = W[r]
+      nest.Connect(pre=tuple(inputPop.astype('int')), post=tuple(nTgtPop.astype('int')),conn_spec='one_to_one',syn_spec={'receptor_type':recType[r],'weight':w,'delay':delay})
+'''
+
 #-------------------------------------------------------------------------------
 # computes the weight of a connection, based on LG14 parameters
 #-------------------------------------------------------------------------------
@@ -722,7 +687,7 @@ def main():
   #-------------------------
 
   mSTN = nest.Create("multimeter")
-  nest.SetStatus(mSTN, {"withtime":True, "record_from":["V_m","currents"]})
+  nest.SetStatus(mSTN, {"withtime":True, "record_from":["V_m","currents"], "fbuffer_size":8192})
   nest.Connect(mSTN, Pop['STN'])
   
   spkDetect = nest.Create("spike_detector", params={"withgid": True, "withtime": True,"fbuffer_size":8192})

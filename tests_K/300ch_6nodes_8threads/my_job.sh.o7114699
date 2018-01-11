@@ -1,0 +1,1886 @@
+Env_base: K-1.2.0-23
+[INFO] [2018.1.5 13:17:27 /home/hp160266/k03437/nest-2.12.0/nestkernel/rng_manager.cpp:226 @ Network::create_rngs_] : Creating default RNGs
+[INFO] [2018.1.5 13:17:27 /home/hp160266/k03437/nest-2.12.0/nestkernel/rng_manager.cpp:226 @ Network::create_rngs_] : Creating default RNGs
+[INFO] [2018.1.5 13:17:27 /home/hp160266/k03437/nest-2.12.0/nestkernel/rng_manager.cpp:226 @ Network::create_rngs_] : Creating default RNGs
+[INFO] [2018.1.5 13:17:27 /home/hp160266/k03437/nest-2.12.0/nestkernel/rng_manager.cpp:226 @ Network::create_rngs_] : Creating default RNGs
+[INFO] [2018.1.5 13:17:27 /home/hp160266/k03437/nest-2.12.0/nestkernel/rng_manager.cpp:226 @ Network::create_rngs_] : Creating default RNGs
+[INFO] [2018.1.5 13:17:27 /home/hp160266/k03437/nest-2.12.0/nestkernel/rng_manager.cpp:226 @ Network::create_rngs_] : Creating default RNGs
+[INFO] [2018.1.5 13:17:27 /home/hp160266/k03437/nest-2.12.0/nestkernel/rng_manager.cpp:221 @ Network::create_rngs_] : Deleting existing random number generators
+[INFO] [2018.1.5 13:17:27 /home/hp160266/k03437/nest-2.12.0/nestkernel/rng_manager.cpp:226 @ Network::create_rngs_] : Creating default RNGs
+[INFO] [2018.1.5 13:17:27 /home/hp160266/k03437/nest-2.12.0/nestkernel/rng_manager.cpp:272 @ Network::create_grng_] : Creating new default global RNG
+[INFO] [2018.1.5 13:17:27 /home/hp160266/k03437/nest-2.12.0/nestkernel/rng_manager.cpp:221 @ Network::create_rngs_] : Deleting existing random number generators
+[INFO] [2018.1.5 13:17:27 /home/hp160266/k03437/nest-2.12.0/nestkernel/rng_manager.cpp:226 @ Network::create_rngs_] : Creating default RNGs
+[INFO] [2018.1.5 13:17:27 /home/hp160266/k03437/nest-2.12.0/nestkernel/rng_manager.cpp:272 @ Network::create_grng_] : Creating new default global RNG
+[INFO] [2018.1.5 13:17:27 /home/hp160266/k03437/nest-2.12.0/nestkernel/rng_manager.cpp:221 @ Network::create_rngs_] : Deleting existing random number generators
+[INFO] [2018.1.5 13:17:27 /home/hp160266/k03437/nest-2.12.0/nestkernel/rng_manager.cpp:226 @ Network::create_rngs_] : Creating default RNGs
+[INFO] [2018.1.5 13:17:27 /home/hp160266/k03437/nest-2.12.0/nestkernel/rng_manager.cpp:272 @ Network::create_grng_] : Creating new default global RNG
+[INFO] [2018.1.5 13:17:27 /home/hp160266/k03437/nest-2.12.0/nestkernel/rng_manager.cpp:221 @ Network::create_rngs_] : Deleting existing random number generators
+[INFO] [2018.1.5 13:17:27 /home/hp160266/k03437/nest-2.12.0/nestkernel/rng_manager.cpp:226 @ Network::create_rngs_] : Creating default RNGs
+[INFO] [2018.1.5 13:17:27 /home/hp160266/k03437/nest-2.12.0/nestkernel/rng_manager.cpp:272 @ Network::create_grng_] : Creating new default global RNG
+[INFO] [2018.1.5 13:17:27 /home/hp160266/k03437/nest-2.12.0/nestkernel/rng_manager.cpp:221 @ Network::create_rngs_] : Deleting existing random number generators
+[INFO] [2018.1.5 13:17:27 /home/hp160266/k03437/nest-2.12.0/nestkernel/rng_manager.cpp:226 @ Network::create_rngs_] : Creating default RNGs
+[INFO] [2018.1.5 13:17:27 /home/hp160266/k03437/nest-2.12.0/nestkernel/rng_manager.cpp:272 @ Network::create_grng_] : Creating new default global RNG
+[INFO] [2018.1.5 13:17:27 /home/hp160266/k03437/nest-2.12.0/nestkernel/rng_manager.cpp:221 @ Network::create_rngs_] : Deleting existing random number generators
+[INFO] [2018.1.5 13:17:27 /home/hp160266/k03437/nest-2.12.0/nestkernel/rng_manager.cpp:226 @ Network::create_rngs_] : Creating default RNGs
+[INFO] [2018.1.5 13:17:27 /home/hp160266/k03437/nest-2.12.0/nestkernel/rng_manager.cpp:272 @ Network::create_grng_] : Creating new default global RNG
+
+              -- N E S T --
+
+  Copyright (C) 2004 The NEST Initiative
+  Version 2.12.0 Sep 27 2017 18:14:27
+
+This program is provided AS IS and comes with
+NO WARRANTY. See the file LICENSE for details.
+
+Problems or suggestions?
+  Visit http://www.nest-simulator.org
+
+Type 'nest.help()' to find out more about NEST.
+
+Jan 05 13:17:28 evalrcfile [Warning]: 
+    NEST has created its configuration file $HOME/.nestrc
+
+Jan 05 13:17:28 evalrcfile [Warning]: 
+    If this troubles you, type '/nestrc help' at the prompt to learn more.
+
+Jan 05 13:17:28 ModelManager::clear_models_ [Info]: 
+    Models will be cleared and parameters reset.
+
+              -- N E S T --
+
+  Copyright (C) 2004 The NEST Initiative
+  Version 2.12.0 Sep 27 2017 18:14:27
+
+This program is provided AS IS and comes with
+NO WARRANTY. See the file LICENSE for details.
+
+Problems or suggestions?
+  Visit http://www.nest-simulator.org
+
+Type 'nest.help()' to find out more about NEST.
+
+Jan 05 13:17:28 evalrcfile [Warning]: 
+    NEST has created its configuration file $HOME/.nestrc
+
+Jan 05 13:17:28 evalrcfile [Warning]: 
+    If this troubles you, type '/nestrc help' at the prompt to learn more.
+
+              -- N E S T --
+
+  Copyright (C) 2004 The NEST Initiative
+  Version 2.12.0 Sep 27 2017 18:14:27
+
+This program is provided AS IS and comes with
+NO WARRANTY. See the file LICENSE for details.
+
+Problems or suggestions?
+  Visit http://www.nest-simulator.org
+
+Type 'nest.help()' to find out more about NEST.
+
+Jan 05 13:17:28 evalrcfile [Warning]: 
+    NEST has created its configuration file $HOME/.nestrc
+
+Jan 05 13:17:28 evalrcfile [Warning]: 
+    If this troubles you, type '/nestrc help' at the prompt to learn more.
+
+Jan 05 13:17:28 Network::create_rngs_ [Info]: 
+    Deleting existing random number generators
+
+Jan 05 13:17:28 Network::create_rngs_ [Info]: 
+    Creating default RNGs
+
+Jan 05 13:17:28 Network::create_grng_ [Info]: 
+    Creating new default global RNG
+
+Jan 05 13:17:28 ModelManager::clear_models_ [Info]: 
+    Models will be cleared and parameters reset.
+
+              -- N E S T --
+
+  Copyright (C) 2004 The NEST Initiative
+  Version 2.12.0 Sep 27 2017 18:14:27
+
+This program is provided AS IS and comes with
+NO WARRANTY. See the file LICENSE for details.
+
+Problems or suggestions?
+  Visit http://www.nest-simulator.org
+
+Type 'nest.help()' to find out more about NEST.
+
+Jan 05 13:17:28 evalrcfile [Warning]: 
+    NEST has created its configuration file $HOME/.nestrc
+
+Jan 05 13:17:28 evalrcfile [Warning]: 
+    If this troubles you, type '/nestrc help' at the prompt to learn more.
+
+              -- N E S T --
+
+  Copyright (C) 2004 The NEST Initiative
+  Version 2.12.0 Sep 27 2017 18:14:27
+
+This program is provided AS IS and comes with
+NO WARRANTY. See the file LICENSE for details.
+
+Problems or suggestions?
+  Visit http://www.nest-simulator.org
+
+Type 'nest.help()' to find out more about NEST.
+
+Jan 05 13:17:28 evalrcfile [Warning]: 
+    NEST has created its configuration file $HOME/.nestrc
+
+Jan 05 13:17:28 evalrcfile [Warning]: 
+    If this troubles you, type '/nestrc help' at the prompt to learn more.
+
+Jan 05 13:17:28 ModelManager::clear_models_ [Info]: 
+    Models will be cleared and parameters reset.
+
+              -- N E S T --
+
+  Copyright (C) 2004 The NEST Initiative
+  Version 2.12.0 Sep 27 2017 18:14:27
+
+This program is provided AS IS and comes with
+NO WARRANTY. See the file LICENSE for details.
+
+Problems or suggestions?
+  Visit http://www.nest-simulator.org
+
+Type 'nest.help()' to find out more about NEST.
+
+Jan 05 13:17:28 evalrcfile [Warning]: 
+    NEST has created its configuration file $HOME/.nestrc
+
+Jan 05 13:17:28 evalrcfile [Warning]: 
+    If this troubles you, type '/nestrc help' at the prompt to learn more.
+
+Jan 05 13:17:28 Network::create_rngs_ [Info]: 
+    Deleting existing random number generators
+
+Jan 05 13:17:28 Network::create_rngs_ [Info]: 
+    Creating default RNGs
+
+Jan 05 13:17:28 Network::create_grng_ [Info]: 
+    Creating new default global RNG
+
+Jan 05 13:17:28 ModelManager::clear_models_ [Info]: 
+    Models will be cleared and parameters reset.
+
+Jan 05 13:17:28 Network::create_rngs_ [Info]: 
+    Deleting existing random number generators
+
+Jan 05 13:17:28 Network::create_rngs_ [Info]: 
+    Creating default RNGs
+
+Jan 05 13:17:28 Network::create_grng_ [Info]: 
+    Creating new default global RNG
+
+Jan 05 13:17:28 ModelManager::clear_models_ [Info]: 
+    Models will be cleared and parameters reset.
+
+Jan 05 13:17:28 Network::create_rngs_ [Info]: 
+    Deleting existing random number generators
+
+Jan 05 13:17:28 Network::create_rngs_ [Info]: 
+    Creating default RNGs
+
+Jan 05 13:17:28 Network::create_grng_ [Info]: 
+    Creating new default global RNG
+
+Jan 05 13:17:28 Network::create_rngs_ [Info]: 
+    Deleting existing random number generators
+
+Jan 05 13:17:28 Network::create_rngs_ [Info]: 
+    Creating default RNGs
+
+Jan 05 13:17:28 Network::create_grng_ [Info]: 
+    Creating new default global RNG
+
+Jan 05 13:17:28 ModelManager::clear_models_ [Info]: 
+    Models will be cleared and parameters reset.
+
+Jan 05 13:17:28 Network::create_rngs_ [Info]: 
+    Deleting existing random number generators
+
+Jan 05 13:17:28 Network::create_rngs_ [Info]: 
+    Creating default RNGs
+
+Jan 05 13:17:28 Network::create_grng_ [Info]: 
+    Creating new default global RNG
+('nbcpu: ', 8)
+/!\ Using the following LG14 parameterization 9
+### Parameterization #9 from (Lienard & Girard, 2014) is used. ###
+('num connections: ', 0)
+
+Creating neurons
+================
+* MSN: 793200.0 neurons (divided in 300 channels) with parameters: {'tau_m': 13.0, 'C_m': 13.0, 'V_th': 30.0}
+* FSI: 15900.0 neurons (divided in 300 channels) with parameters: {'tau_m': 3.1, 'C_m': 3.1, 'V_th': 16.2}
+* STN: 2400.0 neurons (divided in 300 channels) with parameters: {'tau_m': 6.0, 'C_m': 6.0, 'V_th': 26.1}
+* GPe: 7500.0 neurons (divided in 300 channels) with parameters: {'tau_m': 14.0, 'C_m': 14.0, 'V_th': 10.5}
+* GPi: 4200.0 neurons (divided in 300 channels) with parameters: {'tau_m': 14.0, 'C_m': 14.0, 'V_th': 6.2}
+* CSN(fake): 900000.0 Poisson generators (divided in 300 channels) with avg rate: 2.0
+* PTN(fake): 30000.0 Poisson generators (divided in 300 channels) with avg rate: 15.0
+* CMPf(fake): 2700.0 Poisson generators (divided in 300 channels) with avg rate: 4.0
+/!\ /!\ /!\ /!\ 
+WARNING: parrot neuron('nbcpu: ', 8)
+/!\ Using the following LG14 parameterization 9
+### Parameterization #9 from (Lienard & Girard, 2014) is used. ###
+('num connections: ', 0)
+
+Creating neurons
+================
+* MSN: 793200.0 neurons (divided in 300 channels) with parameters: {'tau_m': 13.0, 'C_m': 13.0, 'V_th': 30.0}
+* FSI: 15900.0 neurons (divided in 300 channels) with parameters: {'tau_m': 3.1, 'C_m': 3.1, 'V_th': 16.2}
+* STN: 2400.0 neurons (divided in 300 channels) with parameters: {'tau_m': 6.0, 'C_m': 6.0, 'V_th': 26.1}
+* GPe: 7500.0 neurons (divided in 300 channels) with parameters: {'tau_m': 14.0, 'C_m': 14.0, 'V_th': 10.5}
+* GPi: 4200.0 neurons (divided in 300 channels) with parameters: {'tau_m': 14.0, 'C_m': 14.0, 'V_th': 6.2}
+* CSN(fake): 900000.0 Poisson generators (divided in 300 channels) with avg rate: 2.0
+* PTN(fake): 30000.0 Poisson generators (divided in 300 channels) with avg rate: 15.0
+* CMPf(fake): 2700.0 Poisson generators (divided in 300 channels) with avg rate: 4.0
+/!\ /!\ /!\ /!\ 
+WARNING: parrot neuron('nbcpu: ', 8)
+/!\ Using the following LG14 parameterization 9
+### Parameterization #9 from (Lienard & Girard, 2014) is used. ###
+('num connections: ', 0)
+
+Creating neurons
+================
+* MSN: 793200.0 neurons (divided in 300 channels) with parameters: {'tau_m': 13.0, 'C_m': 13.0, 'V_th': 30.0}
+* FSI: 15900.0 neurons (divided in 300 channels) with parameters: {'tau_m': 3.1, 'C_m': 3.1, 'V_th': 16.2}
+* STN: 2400.0 neurons (divided in 300 channels) with parameters: {'tau_m': 6.0, 'C_m': 6.0, 'V_th': 26.1}
+* GPe: 7500.0 neurons (divided in 300 channels) with parameters: {'tau_m': 14.0, 'C_m': 14.0, 'V_th': 10.5}
+* GPi: 4200.0 neurons (divided in 300 channels) with parameters: {'tau_m': 14.0, 'C_m': 14.0, 'V_th': 6.2}
+* CSN(fake): 900000.0 Poisson generators (divided in 300 channels) with avg rate: 2.0
+* PTN(fake): 30000.0 Poisson generators (divided in 300 channels) with avg rate: 15.0
+* CMPf(fake): 2700.0 Poisson generators (divided in 300 channels) with avg rate: 4.0
+/!\ /!\ /!\ /!\ 
+WARNING: parrot neuron('nbcpu: ', 8)
+/!\ Using the following LG14 parameterization 9
+### Parameterization #9 from (Lienard & Girard, 2014) is used. ###
+('num connections: ', 0)
+
+Creating neurons
+================
+* MSN: 793200.0 neurons (divided in 300 channels) with parameters: {'tau_m': 13.0, 'C_m': 13.0, 'V_th': 30.0}
+* FSI: 15900.0 neurons (divided in 300 channels) with parameters: {'tau_m': 3.1, 'C_m': 3.1, 'V_th': 16.2}
+* STN: 2400.0 neurons (divided in 300 channels) with parameters: {'tau_m': 6.0, 'C_m': 6.0, 'V_th': 26.1}
+* GPe: 7500.0 neurons (divided in 300 channels) with parameters: {'tau_m': 14.0, 'C_m': 14.0, 'V_th': 10.5}
+* GPi: 4200.0 neurons (divided in 300 channels) with parameters: {'tau_m': 14.0, 'C_m': 14.0, 'V_th': 6.2}
+* CSN(fake): 900000.0 Poisson generators (divided in 300 channels) with avg rate: 2.0
+* PTN(fake): 30000.0 Poisson generators (divided in 300 channels) with avg rate: 15.0
+* CMPf(fake): 2700.0 Poisson generators (divided in 300 channels) with avg rate: 4.0
+/!\ /!\ /!\ /!\ 
+WARNING: parrot neuron('nbcpu: ', 8)
+/!\ Using the following LG14 parameterization 9
+### Parameterization #9 from (Lienard & Girard, 2014) is used. ###
+('num connections: ', 0)
+
+Creating neurons
+================
+* MSN: 793200.0 neurons (divided in 300 channels) with parameters: {'tau_m': 13.0, 'C_m': 13.0, 'V_th': 30.0}
+* FSI: 15900.0 neurons (divided in 300 channels) with parameters: {'tau_m': 3.1, 'C_m': 3.1, 'V_th': 16.2}
+* STN: 2400.0 neurons (divided in 300 channels) with parameters: {'tau_m': 6.0, 'C_m': 6.0, 'V_th': 26.1}
+* GPe: 7500.0 neurons (divided in 300 channels) with parameters: {'tau_m': 14.0, 'C_m': 14.0, 'V_th': 10.5}
+* GPi: 4200.0 neurons (divided in 300 channels) with parameters: {'tau_m': 14.0, 'C_m': 14.0, 'V_th': 6.2}
+* CSN(fake): 900000.0 Poisson generators (divided in 300 channels) with avg rate: 2.0
+* PTN(fake): 30000.0 Poisson generators (divided in 300 channels) with avg rate: 15.0
+* CMPf(fake): 2700.0 Poisson generators (divided in 300 channels) with avg rate: 4.0
+/!\ /!\ /!\ /!\ 
+WARNING: parrot neuron('nbcpu: ', 8)
+/!\ Using the following LG14 parameterization 9
+### Parameterization #9 from (Lienard & Girard, 2014) is used. ###
+('num connections: ', 0)
+
+Creating neurons
+================
+* MSN: 793200.0 neurons (divided in 300 channels) with parameters: {'tau_m': 13.0, 'C_m': 13.0, 'V_th': 30.0}
+* FSI: 15900.0 neurons (divided in 300 channels) with parameters: {'tau_m': 3.1, 'C_m': 3.1, 'V_th': 16.2}
+* STN: 2400.0 neurons (divided in 300 channels) with parameters: {'tau_m': 6.0, 'C_m': 6.0, 'V_th': 26.1}
+* GPe: 7500.0 neurons (divided in 300 channels) with parameters: {'tau_m': 14.0, 'C_m': 14.0, 'V_th': 10.5}
+* GPi: 4200.0 neurons (divided in 300 channels) with parameters: {'tau_m': 14.0, 'C_m': 14.0, 'V_th': 6.2}
+* CSN(fake): 900000.0 Poisson generators (divided in 300 channels) with avg rate: 2.0
+* PTN(fake): 30000.0 Poisson generators (divided in 300 channels) with avg rate: 15.0
+* CMPf(fake): 2700.0 Poisson generators (divided in 300 channels) with avg rate: 4.0
+/!\ /!\ /!\ /!\ 
+WARNING: parrot neurons not used, no correlations in inputs
+
+Number of simulated neurons: {'MSN': 2644.0, 'CSN': 3000.0, 'GPi': 14.0, 'CMPf': 9.0, 'GPe': 25.0, 'FSI': 53.0, 'STN': 8.0, 'PTN': 100.0}
+('createBG_MC : ', 22.76995301246643)
+Gains on LG14 syn. strength: {'MSN': 4.0, 'STN': 1.4, 'GPe': 1.0, 'GPi': 1.0, 'FSI': 1.0}
+
+Connecting neurons
+================
+**  antagonist injection in none **
+* MSN Inputs
+* connecting  CSN -> MSN with focused ex connection and 100.0 inputs
+	Maximal number of distinct input neurons (nu): 342.0
+	Minimal number of distinct input neurons     : unknown
+	Compare with the effective chosen inDegree   : 100.0
+inputPop 26440000 (26440000,)
+post:  26440000 (26440000,)
+inputPop 26440000 (26440000,)
+post:  26440000 (26440000,)
+inputPop 26440000 (26440000,)
+post:  26440000 (26440000,)
+* connecting  PTN -> MSN with focused ex connection and 1.0 inputs
+	Maximal number of distinct input neurons (nu): 5.0
+	Minimal number of distinct input neurons     : unknown
+	Compare with the effective chosen inDegree   : 1.0s not used, no correlations in inputs
+
+Number of simulated neurons: {'MSN': 2644.0, 'CSN': 3000.0, 'GPi': 14.0, 'CMPf': 9.0, 'GPe': 25.0, 'FSI': 53.0, 'STN': 8.0, 'PTN': 100.0}
+('createBG_MC : ', 22.767136096954346)
+Gains on LG14 syn. strength: {'MSN': 4.0, 'STN': 1.4, 'GPe': 1.0, 'GPi': 1.0, 'FSI': 1.0}
+
+Connecting neurons
+================
+**  antagonist injection in none **
+* MSN Inputs
+* connecting  CSN -> MSN with focused ex connection and 100.0 inputs
+	Maximal number of distinct input neurons (nu): 342.0
+	Minimal number of distinct input neurons     : unknown
+	Compare with the effective chosen inDegree   : 100.0
+inputPop 26440000 (26440000,)
+post:  26440000 (26440000,)
+inputPop 26440000 (26440000,)
+post:  26440000 (26440000,)
+inputPop 26440000 (26440000,)
+post:  26440000 (26440000,)
+* connecting  PTN -> MSN with focused ex connection and 1.0 inputs
+	Maximal number of distinct input neurons (nu): 5.0
+	Minimal number of distinct input neurons     : unknown
+	Compare with the effective chosen inDegree   : 1.s not used, no correlations in inputs
+
+Number of simulated neurons: {'MSN': 2644.0, 'CSN': 3000.0, 'GPi': 14.0, 'CMPf': 9.0, 'GPe': 25.0, 'FSI': 53.0, 'STN': 8.0, 'PTN': 100.0}
+('createBG_MC : ', 22.763832092285156)
+Gains on LG14 syn. strength: {'MSN': 4.0, 'STN': 1.4, 'GPe': 1.0, 'GPi': 1.0, 'FSI': 1.0}
+
+Connecting neurons
+================
+**  antagonist injection in none **
+* MSN Inputs
+* connecting  CSN -> MSN with focused ex connection and 100.0 inputs
+	Maximal number of distinct input neurons (nu): 342.0
+	Minimal number of distinct input neurons     : unknown
+	Compare with the effective chosen inDegree   : 100.0
+inputPop 26440000 (26440000,)
+post:  26440000 (26440000,)
+inputPop 26440000 (26440000,)
+post:  26440000 (26440000,)
+inputPop 26440000 (26440000,)
+post:  26440000 (26440000,)
+* connecting  PTN -> MSN with focused ex connection and 1.0 inputs
+	Maximal number of distinct input neurons (nu): 5.0
+	Minimal number of distinct input neurons     : unknown
+	Compare with the effective chosen inDegree   : 1.s not used, no correlations in inputs
+
+Number of simulated neurons: {'MSN': 2644.0, 'CSN': 3000.0, 'GPi': 14.0, 'CMPf': 9.0, 'GPe': 25.0, 'FSI': 53.0, 'STN': 8.0, 'PTN': 100.0}
+('createBG_MC : ', 22.749748945236206)
+Gains on LG14 syn. strength: {'MSN': 4.0, 'STN': 1.4, 'GPe': 1.0, 'GPi': 1.0, 'FSI': 1.0}
+
+Connecting neurons
+================
+**  antagonist injection in none **
+* MSN Inputs
+* connecting  CSN -> MSN with focused ex connection and 100.0 inputs
+	Maximal number of distinct input neurons (nu): 342.0
+	Minimal number of distinct input neurons     : unknown
+	Compare with the effective chosen inDegree   : 100.0
+inputPop 26440000 (26440000,)
+post:  26440000 (26440000,)
+inputPop 26440000 (26440000,)
+post:  26440000 (26440000,)
+inputPop 26440000 (26440000,)
+post:  26440000 (26440000,)
+* connecting  PTN -> MSN with focused ex connection and 1.0 inputs
+	Maximal number of distinct input neurons (nu): 5.0
+	Minimal number of distinct input neurons     : unknown
+	Compare with the effective chosen inDegree   : 1.s not used, no correlations in inputs
+
+Number of simulated neurons: {'MSN': 2644.0, 'CSN': 3000.0, 'GPi': 14.0, 'CMPf': 9.0, 'GPe': 25.0, 'FSI': 53.0, 'STN': 8.0, 'PTN': 100.0}
+('createBG_MC : ', 22.759970903396606)
+Gains on LG14 syn. strength: {'MSN': 4.0, 'STN': 1.4, 'GPe': 1.0, 'GPi': 1.0, 'FSI': 1.0}
+
+Connecting neurons
+================
+**  antagonist injection in none **
+* MSN Inputs
+* connecting  CSN -> MSN with focused ex connection and 100.0 inputs
+	Maximal number of distinct input neurons (nu): 342.0
+	Minimal number of distinct input neurons     : unknown
+	Compare with the effective chosen inDegree   : 100.0
+inputPop 26440000 (26440000,)
+post:  26440000 (26440000,)
+inputPop 26440000 (26440000,)
+post:  26440000 (26440000,)
+inputPop 26440000 (26440000,)
+post:  26440000 (26440000,)
+* connecting  PTN -> MSN with focused ex connection and 1.0 inputs
+	Maximal number of distinct input neurons (nu): 5.0
+	Minimal number of distinct input neurons     : unknown
+	Compare with the effective chosen inDegree   : 1.s not used, no correlations in inputs
+
+Number of simulated neurons: {'MSN': 2644.0, 'CSN': 3000.0, 'GPi': 14.0, 'CMPf': 9.0, 'GPe': 25.0, 'FSI': 53.0, 'STN': 8.0, 'PTN': 100.0}
+('createBG_MC : ', 22.749824047088623)
+Gains on LG14 syn. strength: {'MSN': 4.0, 'STN': 1.4, 'GPe': 1.0, 'GPi': 1.0, 'FSI': 1.0}
+
+Connecting neurons
+================
+**  antagonist injection in none **
+* MSN Inputs
+* connecting  CSN -> MSN with focused ex connection and 100.0 inputs
+	Maximal number of distinct input neurons (nu): 342.0
+	Minimal number of distinct input neurons     : unknown
+	Compare with the effective chosen inDegree   : 100.0
+inputPop 26440000 (26440000,)
+post:  26440000 (26440000,)
+inputPop 26440000 (26440000,)
+post:  26440000 (26440000,)
+inputPop 26440000 (26440000,)
+post:  26440000 (26440000,)
+* connecting  PTN -> MSN with focused ex connection and 1.0 inputs
+	Maximal number of distinct input neurons (nu): 5.0
+	Minimal number of distinct input neurons     : unknown
+	Compare with the effective chosen inDegree   : 1.
+inputPop 264400 (264400,)
+post:  264400 (264400,)
+inputPop 264400 (264400,)
+post:  264400 (264400,)
+inputPop 264400 (264400,)
+post:  264400 (264400,)
+* connecting  CMPf -> MSN with focused ex connection and 1.0 inputs
+	Maximal number of distinct input neurons (nu): 16.1445099819
+	Minimal number of distinct input neurons     : 0.00325166364186
+	Compare with the effective chosen inDegree   : 1.0
+inputPop 264400 (264400,)
+post:  264400 (264400,)
+inputPop 264400 (264400,)
+post:  264400 (264400,)
+inputPop 264400 (264400,)
+post:  264400 (264400,)
+* connecting  MSN -> MSN with focused in connection and 70.0 inputs
+	Maximal number of distinct input neurons (nu): 210.0
+	Minimal number of distinct input neurons     : 1.0
+	Compare with the effective chosen inDegree   : 70.0
+inputPop 18508000 (18508000,)
+post:  18508000 (18508000,)
+inputPop 18508000 (18508000,)
+post:  18508000 (18508000,)
+inputPop 18508000 (18508000,)
+post:  18508000 (18508000,)
+* connecting  FSI -> MSN with diffuse in connection and 30.0 inputs
+	Maxima0
+inputPop 264400 (264400,)
+post:  264400 (264400,)
+inputPop 264400 (264400,)
+post:  264400 (264400,)
+inputPop 264400 (264400,)
+post:  264400 (264400,)
+* connecting  CMPf -> MSN with focused ex connection and 1.0 inputs
+	Maximal number of distinct input neurons (nu): 16.1445099819
+	Minimal number of distinct input neurons     : 0.00325166364186
+	Compare with the effective chosen inDegree   : 1.0
+inputPop 264400 (264400,)
+post:  264400 (264400,)
+inputPop 264400 (264400,)
+post:  264400 (264400,)
+inputPop 264400 (264400,)
+post:  264400 (264400,)
+* connecting  MSN -> MSN with focused in connection and 70.0 inputs
+	Maximal number of distinct input neurons (nu): 210.0
+	Minimal number of distinct input neurons     : 1.0
+	Compare with the effective chosen inDegree   : 70.0
+inputPop 18508000 (18508000,)
+post:  18508000 (18508000,)
+inputPop 18508000 (18508000,)
+post:  18508000 (18508000,)
+inputPop 18508000 (18508000,)
+post:  18508000 (18508000,)
+* connecting  FSI -> MSN with diffuse in connection and 30.0 inputs
+	Maxim0
+inputPop 264400 (264400,)
+post:  264400 (264400,)
+inputPop 264400 (264400,)
+post:  264400 (264400,)
+inputPop 264400 (264400,)
+post:  264400 (264400,)
+* connecting  CMPf -> MSN with focused ex connection and 1.0 inputs
+	Maximal number of distinct input neurons (nu): 16.1445099819
+	Minimal number of distinct input neurons     : 0.00325166364186
+	Compare with the effective chosen inDegree   : 1.0
+inputPop 264400 (264400,)
+post:  264400 (264400,)
+inputPop 264400 (264400,)
+post:  264400 (264400,)
+inputPop 264400 (264400,)
+post:  264400 (264400,)
+* connecting  MSN -> MSN with focused in connection and 70.0 inputs
+	Maximal number of distinct input neurons (nu): 210.0
+	Minimal number of distinct input neurons     : 1.0
+	Compare with the effective chosen inDegree   : 70.0
+inputPop 18508000 (18508000,)
+post:  18508000 (18508000,)
+inputPop 18508000 (18508000,)
+post:  18508000 (18508000,)
+inputPop 18508000 (18508000,)
+post:  18508000 (18508000,)
+* connecting  FSI -> MSN with diffuse in connection and 30.0 inputs
+	Maxim0
+inputPop 264400 (264400,)
+post:  264400 (264400,)
+inputPop 264400 (264400,)
+post:  264400 (264400,)
+inputPop 264400 (264400,)
+post:  264400 (264400,)
+* connecting  CMPf -> MSN with focused ex connection and 1.0 inputs
+	Maximal number of distinct input neurons (nu): 16.1445099819
+	Minimal number of distinct input neurons     : 0.00325166364186
+	Compare with the effective chosen inDegree   : 1.0
+inputPop 264400 (264400,)
+post:  264400 (264400,)
+inputPop 264400 (264400,)
+post:  264400 (264400,)
+inputPop 264400 (264400,)
+post:  264400 (264400,)
+* connecting  MSN -> MSN with focused in connection and 70.0 inputs
+	Maximal number of distinct input neurons (nu): 210.0
+	Minimal number of distinct input neurons     : 1.0
+	Compare with the effective chosen inDegree   : 70.0
+inputPop 18508000 (18508000,)
+post:  18508000 (18508000,)
+inputPop 18508000 (18508000,)
+post:  18508000 (18508000,)
+inputPop 18508000 (18508000,)
+post:  18508000 (18508000,)
+* connecting  FSI -> MSN with diffuse in connection and 30.0 inputs
+	Maxim0
+inputPop 264400 (264400,)
+post:  264400 (264400,)
+inputPop 264400 (264400,)
+post:  264400 (264400,)
+inputPop 264400 (264400,)
+post:  264400 (264400,)
+* connecting  CMPf -> MSN with focused ex connection and 1.0 inputs
+	Maximal number of distinct input neurons (nu): 16.1445099819
+	Minimal number of distinct input neurons     : 0.00325166364186
+	Compare with the effective chosen inDegree   : 1.0
+inputPop 264400 (264400,)
+post:  264400 (264400,)
+inputPop 264400 (264400,)
+post:  264400 (264400,)
+inputPop 264400 (264400,)
+post:  264400 (264400,)
+* connecting  MSN -> MSN with focused in connection and 70.0 inputs
+	Maximal number of distinct input neurons (nu): 210.0
+	Minimal number of distinct input neurons     : 1.0
+	Compare with the effective chosen inDegree   : 70.0
+inputPop 18508000 (18508000,)
+post:  18508000 (18508000,)
+inputPop 18508000 (18508000,)
+post:  18508000 (18508000,)
+inputPop 18508000 (18508000,)
+post:  18508000 (18508000,)
+* connecting  FSI -> MSN with diffuse in connection and 30.0 inputs
+	Maxim0
+inputPop 264400 (264400,)
+post:  264400 (264400,)
+inputPop 264400 (264400,)
+post:  264400 (264400,)
+inputPop 264400 (264400,)
+post:  264400 (264400,)
+* connecting  CMPf -> MSN with focused ex connection and 1.0 inputs
+	Maximal number of distinct input neurons (nu): 16.1445099819
+	Minimal number of distinct input neurons     : 0.00325166364186
+	Compare with the effective chosen inDegree   : 1.0
+inputPop 264400 (264400,)
+post:  264400 (264400,)
+inputPop 264400 (264400,)
+post:  264400 (264400,)
+inputPop 264400 (264400,)
+post:  264400 (264400,)
+* connecting  MSN -> MSN with focused in connection and 70.0 inputs
+	Maximal number of distinct input neurons (nu): 210.0
+	Minimal number of distinct input neurons     : 1.0
+	Compare with the effective chosen inDegree   : 70.0
+inputPop 18508000 (18508000,)
+post:  18508000 (18508000,)
+inputPop 18508000 (18508000,)
+post:  18508000 (18508000,)
+inputPop 18508000 (18508000,)
+post:  18508000 (18508000,)
+* connecting  FSI -> MSN with diffuse in connection and 30.0 inputs
+	Maximal number of distinct input neurons (nu): 87.7413793103
+	Minimal number of distinct input neurons     : 0.0201149425287
+	Compare with the effective chosen inDegree   : 30.0
+inputPop 7720480 (7720480,)
+post:  7720480 (7720480,)
+inputPop 8204332 (8204332,)
+post:  8204332 (8204332,)
+inputPop 7902916 (7902916,)
+post:  7902916 (7902916,)
+('num connections: ', 40349085)
+* FSI Inputs
+* connecting  CSN -> FSI with focused ex connection and 50.0 inputs
+	Maximal number of distinct input neurons (nu): 250.0
+	Minimal number of distinct input neurons     : unknown
+	Compare with the effective chosen inDegree   : 50.0
+inputPop 265000 (265000,)
+post:  265000 (265000,)
+inputPop 265000 (265000,)
+post:  265000 (265000,)
+inputPop 265000 (265000,)
+post:  265000 (265000,)
+* connecting  PTN -> FSI with focused ex connection and 1.0 inputs
+	Maximal number of distinct input neurons (nu): 5.0
+	Minimal number of distinct input neurons     : unknown
+	Compare with the effective chosen inDegree   : 1.0
+inputPop 5300 (5300,)
+post:  5300 (5al number of distinct input neurons (nu): 87.7413793103
+	Minimal number of distinct input neurons     : 0.0201149425287
+	Compare with the effective chosen inDegree   : 30.0
+inputPop 7720480 (7720480,)
+post:  7720480 (7720480,)
+inputPop 8204332 (8204332,)
+post:  8204332 (8204332,)
+inputPop 7902916 (7902916,)
+post:  7902916 (7902916,)
+('num connections: ', 40349088)
+* FSI Inputs
+* connecting  CSN -> FSI with focused ex connection and 50.0 inputs
+	Maximal number of distinct input neurons (nu): 250.0
+	Minimal number of distinct input neurons     : unknown
+	Compare with the effective chosen inDegree   : 50.0
+inputPop 265000 (265000,)
+post:  265000 (265000,)
+inputPop 265000 (265000,)
+post:  265000 (265000,)
+inputPop 265000 (265000,)
+post:  265000 (265000,)
+* connecting  PTN -> FSI with focused ex connection and 1.0 inputs
+	Maximal number of distinct input neurons (nu): 5.0
+	Minimal number of distinct input neurons     : unknown
+	Compare with the effective chosen inDegree   : 1.0
+inputPop 5300 (5300,)
+post:  5300 (5al number of distinct input neurons (nu): 87.7413793103
+	Minimal number of distinct input neurons     : 0.0201149425287
+	Compare with the effective chosen inDegree   : 30.0
+inputPop 7720480 (7720480,)
+post:  7720480 (7720480,)
+inputPop 8204332 (8204332,)
+post:  8204332 (8204332,)
+inputPop 7902916 (7902916,)
+post:  7902916 (7902916,)
+('num connections: ', 40349085)
+* FSI Inputs
+* connecting  CSN -> FSI with focused ex connection and 50.0 inputs
+	Maximal number of distinct input neurons (nu): 250.0
+	Minimal number of distinct input neurons     : unknown
+	Compare with the effective chosen inDegree   : 50.0
+inputPop 265000 (265000,)
+post:  265000 (265000,)
+inputPop 265000 (265000,)
+post:  265000 (265000,)
+inputPop 265000 (265000,)
+post:  265000 (265000,)
+* connecting  PTN -> FSI with focused ex connection and 1.0 inputs
+	Maximal number of distinct input neurons (nu): 5.0
+	Minimal number of distinct input neurons     : unknown
+	Compare with the effective chosen inDegree   : 1.0
+inputPop 5300 (5300,)
+post:  5300 (5al number of distinct input neurons (nu): 87.7413793103
+	Minimal number of distinct input neurons     : 0.0201149425287
+	Compare with the effective chosen inDegree   : 30.0
+inputPop 7720480 (7720480,)
+post:  7720480 (7720480,)
+inputPop 8204332 (8204332,)
+post:  8204332 (8204332,)
+inputPop 7902916 (7902916,)
+post:  7902916 (7902916,)
+('num connections: ', 40349088)
+* FSI Inputs
+* connecting  CSN -> FSI with focused ex connection and 50.0 inputs
+	Maximal number of distinct input neurons (nu): 250.0
+	Minimal number of distinct input neurons     : unknown
+	Compare with the effective chosen inDegree   : 50.0
+inputPop 265000 (265000,)
+post:  265000 (265000,)
+inputPop 265000 (265000,)
+post:  265000 (265000,)
+inputPop 265000 (265000,)
+post:  265000 (265000,)
+* connecting  PTN -> FSI with focused ex connection and 1.0 inputs
+	Maximal number of distinct input neurons (nu): 5.0
+	Minimal number of distinct input neurons     : unknown
+	Compare with the effective chosen inDegree   : 1.0
+inputPop 5300 (5300,)
+post:  5300 (5l number of distinct input neurons (nu): 87.7413793103
+	Minimal number of distinct input neurons     : 0.0201149425287
+	Compare with the effective chosen inDegree   : 30.0
+inputPop 7720480 (7720480,)
+post:  7720480 (7720480,)
+inputPop 8204332 (8204332,)
+post:  8204332 (8204332,)
+inputPop 7902916 (7902916,)
+post:  7902916 (7902916,)
+('num connections: ', 40349091)
+* FSI Inputs
+* connecting  CSN -> FSI with focused ex connection and 50.0 inputs
+	Maximal number of distinct input neurons (nu): 250.0
+	Minimal number of distinct input neurons     : unknown
+	Compare with the effective chosen inDegree   : 50.0
+inputPop 265000 (265000,)
+post:  265000 (265000,)
+inputPop 265000 (265000,)
+post:  265000 (265000,)
+inputPop 265000 (265000,)
+post:  265000 (265000,)
+* connecting  PTN -> FSI with focused ex connection and 1.0 inputs
+	Maximal number of distinct input neurons (nu): 5.0
+	Minimal number of distinct input neurons     : unknown
+	Compare with the effective chosen inDegree   : 1.0
+inputPop 5300 (5300,)
+post:  5300 (53al number of distinct input neurons (nu): 87.7413793103
+	Minimal number of distinct input neurons     : 0.0201149425287
+	Compare with the effective chosen inDegree   : 30.0
+inputPop 7720480 (7720480,)
+post:  7720480 (7720480,)
+inputPop 8204332 (8204332,)
+post:  8204332 (8204332,)
+inputPop 7902916 (7902916,)
+post:  7902916 (7902916,)
+('num connections: ', 40349091)
+* FSI Inputs
+* connecting  CSN -> FSI with focused ex connection and 50.0 inputs
+	Maximal number of distinct input neurons (nu): 250.0
+	Minimal number of distinct input neurons     : unknown
+	Compare with the effective chosen inDegree   : 50.0
+inputPop 265000 (265000,)
+post:  265000 (265000,)
+inputPop 265000 (265000,)
+post:  265000 (265000,)
+inputPop 265000 (265000,)
+post:  265000 (265000,)
+* connecting  PTN -> FSI with focused ex connection and 1.0 inputs
+	Maximal number of distinct input neurons (nu): 5.0
+	Minimal number of distinct input neurons     : unknown
+	Compare with the effective chosen inDegree   : 1.0
+inputPop 5300 (5300,)
+post:  5300 (5300,)
+inputPop 5300 (5300,)
+post:  5300 (5300,)
+inputPop 5300 (5300,)
+post:  5300 (5300,)
+* connecting  STN -> FSI with diffuse ex connection and 2.0 inputs
+	Maximal number of distinct input neurons (nu): 2.23907894737
+	Minimal number of distinct input neurons     : 0.0246052631579
+	Compare with the effective chosen inDegree   : 2.0
+inputPop 10971 (10971,)
+post:  10971 (10971,)
+inputPop 10547 (10547,)
+post:  10547 (10547,)
+inputPop 10706 (10706,)
+post:  10706 (10706,)
+* connecting  GPe -> FSI with focused in connection and 25.0 inputs
+	Maximal number of distinct input neurons (nu): 26.647518797
+	Minimal number of distinct input neurons     : 0.0754887218045
+	Compare with the effective chosen inDegree   : 25.0
+inputPop 132500 (132500,)
+post:  132500 (132500,)
+inputPop 132500 (132500,)
+post:  132500 (132500,)
+inputPop 132500 (132500,)
+post:  132500 (132500,)
+* connecting  CMPf -> FSI with focused ex connection and 9.0 inputs
+	Maximal number of distinct input neurons (nu): 170.221804511
+	Minimal number of distin300,)
+inputPop 5300 (5300,)
+post:  5300 (5300,)
+inputPop 5300 (5300,)
+post:  5300 (5300,)
+* connecting  STN -> FSI with diffuse ex connection and 2.0 inputs
+	Maximal number of distinct input neurons (nu): 2.23907894737
+	Minimal number of distinct input neurons     : 0.0246052631579
+	Compare with the effective chosen inDegree   : 2.0
+inputPop 10971 (10971,)
+post:  10971 (10971,)
+inputPop 10547 (10547,)
+post:  10547 (10547,)
+inputPop 10706 (10706,)
+post:  10706 (10706,)
+* connecting  GPe -> FSI with focused in connection and 25.0 inputs
+	Maximal number of distinct input neurons (nu): 26.647518797
+	Minimal number of distinct input neurons     : 0.0754887218045
+	Compare with the effective chosen inDegree   : 25.0
+inputPop 132500 (132500,)
+post:  132500 (132500,)
+inputPop 132500 (132500,)
+post:  132500 (132500,)
+inputPop 132500 (132500,)
+post:  132500 (132500,)
+* connecting  CMPf -> FSI with focused ex connection and 9.0 inputs
+	Maximal number of distinct input neurons (nu): 170.221804511
+	Minimal number of distin300,)
+inputPop 5300 (5300,)
+post:  5300 (5300,)
+inputPop 5300 (5300,)
+post:  5300 (5300,)
+* connecting  STN -> FSI with diffuse ex connection and 2.0 inputs
+	Maximal number of distinct input neurons (nu): 2.23907894737
+	Minimal number of distinct input neurons     : 0.0246052631579
+	Compare with the effective chosen inDegree   : 2.0
+inputPop 10971 (10971,)
+post:  10971 (10971,)
+inputPop 10547 (10547,)
+post:  10547 (10547,)
+inputPop 10706 (10706,)
+post:  10706 (10706,)
+* connecting  GPe -> FSI with focused in connection and 25.0 inputs
+	Maximal number of distinct input neurons (nu): 26.647518797
+	Minimal number of distinct input neurons     : 0.0754887218045
+	Compare with the effective chosen inDegree   : 25.0
+inputPop 132500 (132500,)
+post:  132500 (132500,)
+inputPop 132500 (132500,)
+post:  132500 (132500,)
+inputPop 132500 (132500,)
+post:  132500 (132500,)
+* connecting  CMPf -> FSI with focused ex connection and 9.0 inputs
+	Maximal number of distinct input neurons (nu): 170.221804511
+	Minimal number of distin300,)
+inputPop 5300 (5300,)
+post:  5300 (5300,)
+inputPop 5300 (5300,)
+post:  5300 (5300,)
+* connecting  STN -> FSI with diffuse ex connection and 2.0 inputs
+	Maximal number of distinct input neurons (nu): 2.23907894737
+	Minimal number of distinct input neurons     : 0.0246052631579
+	Compare with the effective chosen inDegree   : 2.0
+inputPop 10971 (10971,)
+post:  10971 (10971,)
+inputPop 10547 (10547,)
+post:  10547 (10547,)
+inputPop 10706 (10706,)
+post:  10706 (10706,)
+* connecting  GPe -> FSI with focused in connection and 25.0 inputs
+	Maximal number of distinct input neurons (nu): 26.647518797
+	Minimal number of distinct input neurons     : 0.0754887218045
+	Compare with the effective chosen inDegree   : 25.0
+inputPop 132500 (132500,)
+post:  132500 (132500,)
+inputPop 132500 (132500,)
+post:  132500 (132500,)
+inputPop 132500 (132500,)
+post:  132500 (132500,)
+* connecting  CMPf -> FSI with focused ex connection and 9.0 inputs
+	Maximal number of distinct input neurons (nu): 170.221804511
+	Minimal number of distin00,)
+inputPop 5300 (5300,)
+post:  5300 (5300,)
+inputPop 5300 (5300,)
+post:  5300 (5300,)
+* connecting  STN -> FSI with diffuse ex connection and 2.0 inputs
+	Maximal number of distinct input neurons (nu): 2.23907894737
+	Minimal number of distinct input neurons     : 0.0246052631579
+	Compare with the effective chosen inDegree   : 2.0
+inputPop 10971 (10971,)
+post:  10971 (10971,)
+inputPop 10547 (10547,)
+post:  10547 (10547,)
+inputPop 10706 (10706,)
+post:  10706 (10706,)
+* connecting  GPe -> FSI with focused in connection and 25.0 inputs
+	Maximal number of distinct input neurons (nu): 26.647518797
+	Minimal number of distinct input neurons     : 0.0754887218045
+	Compare with the effective chosen inDegree   : 25.0
+inputPop 132500 (132500,)
+post:  132500 (132500,)
+inputPop 132500 (132500,)
+post:  132500 (132500,)
+inputPop 132500 (132500,)
+post:  132500 (132500,)
+* connecting  CMPf -> FSI with focused ex connection and 9.0 inputs
+	Maximal number of distinct input neurons (nu): 170.221804511
+	Minimal number of distinc300,)
+inputPop 5300 (5300,)
+post:  5300 (5300,)
+inputPop 5300 (5300,)
+post:  5300 (5300,)
+* connecting  STN -> FSI with diffuse ex connection and 2.0 inputs
+	Maximal number of distinct input neurons (nu): 2.23907894737
+	Minimal number of distinct input neurons     : 0.0246052631579
+	Compare with the effective chosen inDegree   : 2.0
+inputPop 10971 (10971,)
+post:  10971 (10971,)
+inputPop 10547 (10547,)
+post:  10547 (10547,)
+inputPop 10706 (10706,)
+post:  10706 (10706,)
+* connecting  GPe -> FSI with focused in connection and 25.0 inputs
+	Maximal number of distinct input neurons (nu): 26.647518797
+	Minimal number of distinct input neurons     : 0.0754887218045
+	Compare with the effective chosen inDegree   : 25.0
+inputPop 132500 (132500,)
+post:  132500 (132500,)
+inputPop 132500 (132500,)
+post:  132500 (132500,)
+inputPop 132500 (132500,)
+post:  132500 (132500,)
+* connecting  CMPf -> FSI with focused ex connection and 9.0 inputs
+	Maximal number of distinct input neurons (nu): 170.221804511
+	Minimal number of distinct input neurons     : 0.161654135338
+	Compare with the effective chosen inDegree   : 9.0
+inputPop 47700 (47700,)
+post:  47700 (47700,)
+inputPop 47700 (47700,)
+post:  47700 (47700,)
+inputPop 47700 (47700,)
+post:  47700 (47700,)
+* connecting  FSI -> FSI with diffuse in connection and 15.0 inputs
+	Maximal number of distinct input neurons (nu): 116.0
+	Minimal number of distinct input neurons     : 1.0
+	Compare with the effective chosen inDegree   : 15.0
+inputPop 79553 (79553,)
+post:  79553 (79553,)
+inputPop 79288 (79288,)
+post:  79288 (79288,)
+inputPop 75684 (75684,)
+post:  75684 (75684,)
+('num connections: ', 40783123)
+* STN Inputs
+* connecting  PTN -> STN with focused ex connection and 25.0 inputs
+	Maximal number of distinct input neurons (nu): 259.0
+	Minimal number of distinct input neurons     : unknown
+	Compare with the effective chosen inDegree   : 25.0
+inputPop 20000 (20000,)
+post:  20000 (20000,)
+inputPop 20000 (20000,)
+post:  20000 (20000,)
+inputPop 20000 (20000,)
+post:  20000 (20000,)
+* connecting  CMPct input neurons     : 0.161654135338
+	Compare with the effective chosen inDegree   : 9.0
+inputPop 47700 (47700,)
+post:  47700 (47700,)
+inputPop 47700 (47700,)
+post:  47700 (47700,)
+inputPop 47700 (47700,)
+post:  47700 (47700,)
+* connecting  FSI -> FSI with diffuse in connection and 15.0 inputs
+	Maximal number of distinct input neurons (nu): 116.0
+	Minimal number of distinct input neurons     : 1.0
+	Compare with the effective chosen inDegree   : 15.0
+inputPop 79553 (79553,)
+post:  79553 (79553,)
+inputPop 79288 (79288,)
+post:  79288 (79288,)
+inputPop 75684 (75684,)
+post:  75684 (75684,)
+('num connections: ', 40783148)
+* STN Inputs
+* connecting  PTN -> STN with focused ex connection and 25.0 inputs
+	Maximal number of distinct input neurons (nu): 259.0
+	Minimal number of distinct input neurons     : unknown
+	Compare with the effective chosen inDegree   : 25.0
+inputPop 20000 (20000,)
+post:  20000 (20000,)
+inputPop 20000 (20000,)
+post:  20000 (20000,)
+inputPop 20000 (20000,)
+post:  20000 (20000,)
+* connecting  CMPt input neurons     : 0.161654135338
+	Compare with the effective chosen inDegree   : 9.0
+inputPop 47700 (47700,)
+post:  47700 (47700,)
+inputPop 47700 (47700,)
+post:  47700 (47700,)
+inputPop 47700 (47700,)
+post:  47700 (47700,)
+* connecting  FSI -> FSI with diffuse in connection and 15.0 inputs
+	Maximal number of distinct input neurons (nu): 116.0
+	Minimal number of distinct input neurons     : 1.0
+	Compare with the effective chosen inDegree   : 15.0
+inputPop 79553 (79553,)
+post:  79553 (79553,)
+inputPop 79288 (79288,)
+post:  79288 (79288,)
+inputPop 75684 (75684,)
+post:  75684 (75684,)
+('num connections: ', 40783192)
+* STN Inputs
+* connecting  PTN -> STN with focused ex connection and 25.0 inputs
+	Maximal number of distinct input neurons (nu): 259.0
+	Minimal number of distinct input neurons     : unknown
+	Compare with the effective chosen inDegree   : 25.0
+inputPop 20000 (20000,)
+post:  20000 (20000,)
+inputPop 20000 (20000,)
+post:  20000 (20000,)
+inputPop 20000 (20000,)
+post:  20000 (20000,)
+* connecting  CMPfct input neurons     : 0.161654135338
+	Compare with the effective chosen inDegree   : 9.0
+inputPop 47700 (47700,)
+post:  47700 (47700,)
+inputPop 47700 (47700,)
+post:  47700 (47700,)
+inputPop 47700 (47700,)
+post:  47700 (47700,)
+* connecting  FSI -> FSI with diffuse in connection and 15.0 inputs
+	Maximal number of distinct input neurons (nu): 116.0
+	Minimal number of distinct input neurons     : 1.0
+	Compare with the effective chosen inDegree   : 15.0
+inputPop 79553 (79553,)
+post:  79553 (79553,)
+inputPop 79288 (79288,)
+post:  79288 (79288,)
+inputPop 75684 (75684,)
+post:  75684 (75684,)
+('num connections: ', 40783187)
+* STN Inputs
+* connecting  PTN -> STN with focused ex connection and 25.0 inputs
+	Maximal number of distinct input neurons (nu): 259.0
+	Minimal number of distinct input neurons     : unknown
+	Compare with the effective chosen inDegree   : 25.0
+inputPop 20000 (20000,)
+post:  20000 (20000,)
+inputPop 20000 (20000,)
+post:  20000 (20000,)
+inputPop 20000 (20000,)
+post:  20000 (20000,)
+* connecting  CMPct input neurons     : 0.161654135338
+	Compare with the effective chosen inDegree   : 9.0
+inputPop 47700 (47700,)
+post:  47700 (47700,)
+inputPop 47700 (47700,)
+post:  47700 (47700,)
+inputPop 47700 (47700,)
+post:  47700 (47700,)
+* connecting  FSI -> FSI with diffuse in connection and 15.0 inputs
+	Maximal number of distinct input neurons (nu): 116.0
+	Minimal number of distinct input neurons     : 1.0
+	Compare with the effective chosen inDegree   : 15.0
+inputPop 79553 (79553,)
+post:  79553 (79553,)
+inputPop 79288 (79288,)
+post:  79288 (79288,)
+inputPop 75684 (75684,)
+post:  75684 (75684,)
+('num connections: ', 40783164)
+* STN Inputs
+* connecting  PTN -> STN with focused ex connection and 25.0 inputs
+	Maximal number of distinct input neurons (nu): 259.0
+	Minimal number of distinct input neurons     : unknown
+	Compare with the effective chosen inDegree   : 25.0
+inputPop 20000 (20000,)
+post:  20000 (20000,)
+inputPop 20000 (20000,)
+post:  20000 (20000,)
+inputPop 20000 (20000,)
+post:  20000 (20000,)
+* connecting  CMPct input neurons     : 0.161654135338
+	Compare with the effective chosen inDegree   : 9.0
+inputPop 47700 (47700,)
+post:  47700 (47700,)
+inputPop 47700 (47700,)
+post:  47700 (47700,)
+inputPop 47700 (47700,)
+post:  47700 (47700,)
+* connecting  FSI -> FSI with diffuse in connection and 15.0 inputs
+	Maximal number of distinct input neurons (nu): 116.0
+	Minimal number of distinct input neurons     : 1.0
+	Compare with the effective chosen inDegree   : 15.0
+inputPop 79553 (79553,)
+post:  79553 (79553,)
+inputPop 79288 (79288,)
+post:  79288 (79288,)
+inputPop 75684 (75684,)
+post:  75684 (75684,)
+('num connections: ', 40783187)
+* STN Inputs
+* connecting  PTN -> STN with focused ex connection and 25.0 inputs
+	Maximal number of distinct input neurons (nu): 259.0
+	Minimal number of distinct input neurons     : unknown
+	Compare with the effective chosen inDegree   : 25.0
+inputPop 20000 (20000,)
+post:  20000 (20000,)
+inputPop 20000 (20000,)
+post:  20000 (20000,)
+inputPop 20000 (20000,)
+post:  20000 (20000,)
+* connecting  CMPf -> STN with focused ex connection and 9.0 inputs
+	Maximal number of distinct input neurons (nu): 84.8831168831
+	Minimal number of distinct input neurons     : 1.11688311688
+	Compare with the effective chosen inDegree   : 9.0
+inputPop 7200 (7200,)
+post:  7200 (7200,)
+inputPop 7200 (7200,)
+post:  7200 (7200,)
+inputPop 7200 (7200,)
+post:  7200 (7200,)
+* connecting  GPe -> STN with focused in connection and 25.0 inputs
+	Maximal number of distinct input neurons (nu): 61.9350649351
+	Minimal number of distinct input neurons     : 3.25974025974
+	Compare with the effective chosen inDegree   : 25.0
+inputPop 20000 (20000,)
+post:  20000 (20000,)
+inputPop 20000 (20000,)
+post:  20000 (20000,)
+inputPop 20000 (20000,)
+post:  20000 (20000,)
+* GPe Inputs
+* connecting  CMPf -> GPe with focused ex connection and 9.0 inputs
+	Maximal number of distinct input neurons (nu): 27.0677290837
+	Minimal number of distinct input neurons     : 0.342629482072
+	Compare with the effective chosen inDegree   : 9.0
+inputPop 22500 (22500,)
+post:  -> STN with focused ex connection and 9.0 inputs
+	Maximal number of distinct input neurons (nu): 84.8831168831
+	Minimal number of distinct input neurons     : 1.11688311688
+	Compare with the effective chosen inDegree   : 9.0
+inputPop 7200 (7200,)
+post:  7200 (7200,)
+inputPop 7200 (7200,)
+post:  7200 (7200,)
+inputPop 7200 (7200,)
+post:  7200 (7200,)
+* connecting  GPe -> STN with focused in connection and 25.0 inputs
+	Maximal number of distinct input neurons (nu): 61.9350649351
+	Minimal number of distinct input neurons     : 3.25974025974
+	Compare with the effective chosen inDegree   : 25.0
+inputPop 20000 (20000,)
+post:  20000 (20000,)
+inputPop 20000 (20000,)
+post:  20000 (20000,)
+inputPop 20000 (20000,)
+post:  20000 (20000,)
+* GPe Inputs
+* connecting  CMPf -> GPe with focused ex connection and 9.0 inputs
+	Maximal number of distinct input neurons (nu): 27.0677290837
+	Minimal number of distinct input neurons     : 0.342629482072
+	Compare with the effective chosen inDegree   : 9.0
+inputPop 22500 (22500,)
+post:  f -> STN with focused ex connection and 9.0 inputs
+	Maximal number of distinct input neurons (nu): 84.8831168831
+	Minimal number of distinct input neurons     : 1.11688311688
+	Compare with the effective chosen inDegree   : 9.0
+inputPop 7200 (7200,)
+post:  7200 (7200,)
+inputPop 7200 (7200,)
+post:  7200 (7200,)
+inputPop 7200 (7200,)
+post:  7200 (7200,)
+* connecting  GPe -> STN with focused in connection and 25.0 inputs
+	Maximal number of distinct input neurons (nu): 61.9350649351
+	Minimal number of distinct input neurons     : 3.25974025974
+	Compare with the effective chosen inDegree   : 25.0
+inputPop 20000 (20000,)
+post:  20000 (20000,)
+inputPop 20000 (20000,)
+post:  20000 (20000,)
+inputPop 20000 (20000,)
+post:  20000 (20000,)
+* GPe Inputs
+* connecting  CMPf -> GPe with focused ex connection and 9.0 inputs
+	Maximal number of distinct input neurons (nu): 27.0677290837
+	Minimal number of distinct input neurons     : 0.342629482072
+	Compare with the effective chosen inDegree   : 9.0
+inputPop 22500 (22500,)
+post: f -> STN with focused ex connection and 9.0 inputs
+	Maximal number of distinct input neurons (nu): 84.8831168831
+	Minimal number of distinct input neurons     : 1.11688311688
+	Compare with the effective chosen inDegree   : 9.0
+inputPop 7200 (7200,)
+post:  7200 (7200,)
+inputPop 7200 (7200,)
+post:  7200 (7200,)
+inputPop 7200 (7200,)
+post:  7200 (7200,)
+* connecting  GPe -> STN with focused in connection and 25.0 inputs
+	Maximal number of distinct input neurons (nu): 61.9350649351
+	Minimal number of distinct input neurons     : 3.25974025974
+	Compare with the effective chosen inDegree   : 25.0
+inputPop 20000 (20000,)
+post:  20000 (20000,)
+inputPop 20000 (20000,)
+post:  20000 (20000,)
+inputPop 20000 (20000,)
+post:  20000 (20000,)
+* GPe Inputs
+* connecting  CMPf -> GPe with focused ex connection and 9.0 inputs
+	Maximal number of distinct input neurons (nu): 27.0677290837
+	Minimal number of distinct input neurons     : 0.342629482072
+	Compare with the effective chosen inDegree   : 9.0
+inputPop 22500 (22500,)
+post: f -> STN with focused ex connection and 9.0 inputs
+	Maximal number of distinct input neurons (nu): 84.8831168831
+	Minimal number of distinct input neurons     : 1.11688311688
+	Compare with the effective chosen inDegree   : 9.0
+inputPop 7200 (7200,)
+post:  7200 (7200,)
+inputPop 7200 (7200,)
+post:  7200 (7200,)
+inputPop 7200 (7200,)
+post:  7200 (7200,)
+* connecting  GPe -> STN with focused in connection and 25.0 inputs
+	Maximal number of distinct input neurons (nu): 61.9350649351
+	Minimal number of distinct input neurons     : 3.25974025974
+	Compare with the effective chosen inDegree   : 25.0
+inputPop 20000 (20000,)
+post:  20000 (20000,)
+inputPop 20000 (20000,)
+post:  20000 (20000,)
+inputPop 20000 (20000,)
+post:  20000 (20000,)
+* GPe Inputs
+* connecting  CMPf -> GPe with focused ex connection and 9.0 inputs
+	Maximal number of distinct input neurons (nu): 27.0677290837
+	Minimal number of distinct input neurons     : 0.342629482072
+	Compare with the effective chosen inDegree   : 9.0
+inputPop 22500 (22500,)
+post: f -> STN with focused ex connection and 9.0 inputs
+	Maximal number of distinct input neurons (nu): 84.8831168831
+	Minimal number of distinct input neurons     : 1.11688311688
+	Compare with the effective chosen inDegree   : 9.0
+inputPop 7200 (7200,)
+post:  7200 (7200,)
+inputPop 7200 (7200,)
+post:  7200 (7200,)
+inputPop 7200 (7200,)
+post:  7200 (7200,)
+* connecting  GPe -> STN with focused in connection and 25.0 inputs
+	Maximal number of distinct input neurons (nu): 61.9350649351
+	Minimal number of distinct input neurons     : 3.25974025974
+	Compare with the effective chosen inDegree   : 25.0
+inputPop 20000 (20000,)
+post:  20000 (20000,)
+inputPop 20000 (20000,)
+post:  20000 (20000,)
+inputPop 20000 (20000,)
+post:  20000 (20000,)
+* GPe Inputs
+* connecting  CMPf -> GPe with focused ex connection and 9.0 inputs
+	Maximal number of distinct input neurons (nu): 27.0677290837
+	Minimal number of distinct input neurons     : 0.342629482072
+	Compare with the effective chosen inDegree   : 9.0
+inputPop 22500 (22500,)
+post:  22500 (22500,)
+inputPop 22500 (22500,)
+post:  22500 (22500,)
+inputPop 22500 (22500,)
+post:  22500 (22500,)
+* connecting  STN -> GPe with diffuse ex connection and 8.0 inputs
+	Maximal number of distinct input neurons (nu): 108.978007968
+	Minimal number of distinct input neurons     : 0.254621513944
+	Compare with the effective chosen inDegree   : 8.0
+inputPop 20275 (20275,)
+post:  20275 (20275,)
+inputPop 21075 (21075,)
+post:  21075 (21075,)
+inputPop 19500 (19500,)
+post:  19500 (19500,)
+* connecting  MSN -> GPe with focused in connection and 2644.0 inputs
+	Maximal number of distinct input neurons (nu): 18018.3585657
+	Minimal number of distinct input neurons     : 105.370517928
+	Compare with the effective chosen inDegree   : 2644.0
+inputPop 6610000 (6610000,)
+post:  6610000 (6610000,)
+inputPop 6610000 (6610000,)
+post:  6610000 (6610000,)
+inputPop 6610000 (6610000,)
+post:  6610000 (6610000,)
+* connecting  GPe -> GPe with diffuse in connection and 25.0 inputs
+	Maximal number of distinct input neurons (nu): 31.08
+	 22500 (22500,)
+inputPop 22500 (22500,)
+post:  22500 (22500,)
+inputPop 22500 (22500,)
+post:  22500 (22500,)
+* connecting  STN -> GPe with diffuse ex connection and 8.0 inputs
+	Maximal number of distinct input neurons (nu): 108.978007968
+	Minimal number of distinct input neurons     : 0.254621513944
+	Compare with the effective chosen inDegree   : 8.0
+inputPop 20275 (20275,)
+post:  20275 (20275,)
+inputPop 21075 (21075,)
+post:  21075 (21075,)
+inputPop 19500 (19500,)
+post:  19500 (19500,)
+* connecting  MSN -> GPe with focused in connection and 2644.0 inputs
+	Maximal number of distinct input neurons (nu): 18018.3585657
+	Minimal number of distinct input neurons     : 105.370517928
+	Compare with the effective chosen inDegree   : 2644.0
+inputPop 6610000 (6610000,)
+post:  6610000 (6610000,)
+inputPop 6610000 (6610000,)
+post:  6610000 (6610000,)
+inputPop 6610000 (6610000,)
+post:  6610000 (6610000,)
+* connecting  GPe -> GPe with diffuse in connection and 25.0 inputs
+	Maximal number of distinct input neurons (nu): 31.08
+	22500 (22500,)
+inputPop 22500 (22500,)
+post:  22500 (22500,)
+inputPop 22500 (22500,)
+post:  22500 (22500,)
+* connecting  STN -> GPe with diffuse ex connection and 8.0 inputs
+	Maximal number of distinct input neurons (nu): 108.978007968
+	Minimal number of distinct input neurons     : 0.254621513944
+	Compare with the effective chosen inDegree   : 8.0
+inputPop 20275 (20275,)
+post:  20275 (20275,)
+inputPop 21075 (21075,)
+post:  21075 (21075,)
+inputPop 19500 (19500,)
+post:  19500 (19500,)
+* connecting  MSN -> GPe with focused in connection and 2644.0 inputs
+	Maximal number of distinct input neurons (nu): 18018.3585657
+	Minimal number of distinct input neurons     : 105.370517928
+	Compare with the effective chosen inDegree   : 2644.0
+inputPop 6610000 (6610000,)
+post:  6610000 (6610000,)
+inputPop 6610000 (6610000,)
+post:  6610000 (6610000,)
+inputPop 6610000 (6610000,)
+post:  6610000 (6610000,)
+* connecting  GPe -> GPe with diffuse in connection and 25.0 inputs
+	Maximal number of distinct input neurons (nu): 31.08
+	M 22500 (22500,)
+inputPop 22500 (22500,)
+post:  22500 (22500,)
+inputPop 22500 (22500,)
+post:  22500 (22500,)
+* connecting  STN -> GPe with diffuse ex connection and 8.0 inputs
+	Maximal number of distinct input neurons (nu): 108.978007968
+	Minimal number of distinct input neurons     : 0.254621513944
+	Compare with the effective chosen inDegree   : 8.0
+inputPop 20275 (20275,)
+post:  20275 (20275,)
+inputPop 21075 (21075,)
+post:  21075 (21075,)
+inputPop 19500 (19500,)
+post:  19500 (19500,)
+* connecting  MSN -> GPe with focused in connection and 2644.0 inputs
+	Maximal number of distinct input neurons (nu): 18018.3585657
+	Minimal number of distinct input neurons     : 105.370517928
+	Compare with the effective chosen inDegree   : 2644.0
+inputPop 6610000 (6610000,)
+post:  6610000 (6610000,)
+inputPop 6610000 (6610000,)
+post:  6610000 (6610000,)
+inputPop 6610000 (6610000,)
+post:  6610000 (6610000,)
+* connecting  GPe -> GPe with diffuse in connection and 25.0 inputs
+	Maximal number of distinct input neurons (nu): 31.08
+	 22500 (22500,)
+inputPop 22500 (22500,)
+post:  22500 (22500,)
+inputPop 22500 (22500,)
+post:  22500 (22500,)
+* connecting  STN -> GPe with diffuse ex connection and 8.0 inputs
+	Maximal number of distinct input neurons (nu): 108.978007968
+	Minimal number of distinct input neurons     : 0.254621513944
+	Compare with the effective chosen inDegree   : 8.0
+inputPop 20275 (20275,)
+post:  20275 (20275,)
+inputPop 21075 (21075,)
+post:  21075 (21075,)
+inputPop 19500 (19500,)
+post:  19500 (19500,)
+* connecting  MSN -> GPe with focused in connection and 2644.0 inputs
+	Maximal number of distinct input neurons (nu): 18018.3585657
+	Minimal number of distinct input neurons     : 105.370517928
+	Compare with the effective chosen inDegree   : 2644.0
+inputPop 6610000 (6610000,)
+post:  6610000 (6610000,)
+inputPop 6610000 (6610000,)
+post:  6610000 (6610000,)
+inputPop 6610000 (6610000,)
+post:  6610000 (6610000,)
+* connecting  GPe -> GPe with diffuse in connection and 25.0 inputs
+	Maximal number of distinct input neurons (nu): 31.08
+	 22500 (22500,)
+inputPop 22500 (22500,)
+post:  22500 (22500,)
+inputPop 22500 (22500,)
+post:  22500 (22500,)
+* connecting  STN -> GPe with diffuse ex connection and 8.0 inputs
+	Maximal number of distinct input neurons (nu): 108.978007968
+	Minimal number of distinct input neurons     : 0.254621513944
+	Compare with the effective chosen inDegree   : 8.0
+inputPop 20275 (20275,)
+post:  20275 (20275,)
+inputPop 21075 (21075,)
+post:  21075 (21075,)
+inputPop 19500 (19500,)
+post:  19500 (19500,)
+* connecting  MSN -> GPe with focused in connection and 2644.0 inputs
+	Maximal number of distinct input neurons (nu): 18018.3585657
+	Minimal number of distinct input neurons     : 105.370517928
+	Compare with the effective chosen inDegree   : 2644.0
+inputPop 6610000 (6610000,)
+post:  6610000 (6610000,)
+inputPop 6610000 (6610000,)
+post:  6610000 (6610000,)
+inputPop 6610000 (6610000,)
+post:  6610000 (6610000,)
+* connecting  GPe -> GPe with diffuse in connection and 25.0 inputs
+	Maximal number of distinct input neurons (nu): 31.08
+	Minimal number of distinct input neurons     : 0.84
+	Compare with the effective chosen inDegree   : 25.0
+inputPop 60700 (60700,)
+post:  60700 (60700,)
+inputPop 62125 (62125,)
+post:  62125 (62125,)
+inputPop 61575 (61575,)
+post:  61575 (61575,)
+('num connections: ', 44198800)
+* GPi Inputs
+* connecting  MSN -> GPi with focused in connection and 2644.0 inputs
+	Maximal number of distinct input neurons (nu): 31848.5706294
+	Minimal number of distinct input neurons     : 151.65986014
+	Compare with the effective chosen inDegree   : 2644.0
+inputPop 3701600 (3701600,)
+post:  3701600 (3701600,)
+inputPop 3701600 (3701600,)
+post:  3701600 (3701600,)
+inputPop 3701600 (3701600,)
+post:  3701600 (3701600,)
+* connecting  STN -> GPi with diffuse ex connection and 8.0 inputs
+	Maximal number of distinct input neurons (nu): 90.3323076923
+	Minimal number of distinct input neurons     : 0.387692307692
+	Compare with the effective chosen inDegree   : 8.0
+inputPop 11606 (11606,)
+post:  11606 (11606,)
+inputPop 11102 (11102,)
+post:  11102Minimal number of distinct input neurons     : 0.84
+	Compare with the effective chosen inDegree   : 25.0
+inputPop 60700 (60700,)
+post:  60700 (60700,)
+inputPop 62125 (62125,)
+post:  62125 (62125,)
+inputPop 61575 (61575,)
+post:  61575 (61575,)
+('num connections: ', 44198970)
+* GPi Inputs
+* connecting  MSN -> GPi with focused in connection and 2644.0 inputs
+	Maximal number of distinct input neurons (nu): 31848.5706294
+	Minimal number of distinct input neurons     : 151.65986014
+	Compare with the effective chosen inDegree   : 2644.0
+inputPop 3701600 (3701600,)
+post:  3701600 (3701600,)
+inputPop 3701600 (3701600,)
+post:  3701600 (3701600,)
+inputPop 3701600 (3701600,)
+post:  3701600 (3701600,)
+* connecting  STN -> GPi with diffuse ex connection and 8.0 inputs
+	Maximal number of distinct input neurons (nu): 90.3323076923
+	Minimal number of distinct input neurons     : 0.387692307692
+	Compare with the effective chosen inDegree   : 8.0
+inputPop 11606 (11606,)
+post:  11606 (11606,)
+inputPop 11102 (11102,)
+post:  11102inimal number of distinct input neurons     : 0.84
+	Compare with the effective chosen inDegree   : 25.0
+inputPop 60700 (60700,)
+post:  60700 (60700,)
+inputPop 62125 (62125,)
+post:  62125 (62125,)
+inputPop 61575 (61575,)
+post:  61575 (61575,)
+('num connections: ', 44198903)
+* GPi Inputs
+* connecting  MSN -> GPi with focused in connection and 2644.0 inputs
+	Maximal number of distinct input neurons (nu): 31848.5706294
+	Minimal number of distinct input neurons     : 151.65986014
+	Compare with the effective chosen inDegree   : 2644.0
+inputPop 3701600 (3701600,)
+post:  3701600 (3701600,)
+inputPop 3701600 (3701600,)
+post:  3701600 (3701600,)
+inputPop 3701600 (3701600,)
+post:  3701600 (3701600,)
+* connecting  STN -> GPi with diffuse ex connection and 8.0 inputs
+	Maximal number of distinct input neurons (nu): 90.3323076923
+	Minimal number of distinct input neurons     : 0.387692307692
+	Compare with the effective chosen inDegree   : 8.0
+inputPop 11606 (11606,)
+post:  11606 (11606,)
+inputPop 11102 (11102,)
+post:  11102 Minimal number of distinct input neurons     : 0.84
+	Compare with the effective chosen inDegree   : 25.0
+inputPop 60700 (60700,)
+post:  60700 (60700,)
+inputPop 62125 (62125,)
+post:  62125 (62125,)
+inputPop 61575 (61575,)
+post:  61575 (61575,)
+('num connections: ', 44198770)
+* GPi Inputs
+* connecting  MSN -> GPi with focused in connection and 2644.0 inputs
+	Maximal number of distinct input neurons (nu): 31848.5706294
+	Minimal number of distinct input neurons     : 151.65986014
+	Compare with the effective chosen inDegree   : 2644.0
+inputPop 3701600 (3701600,)
+post:  3701600 (3701600,)
+inputPop 3701600 (3701600,)
+post:  3701600 (3701600,)
+inputPop 3701600 (3701600,)
+post:  3701600 (3701600,)
+* connecting  STN -> GPi with diffuse ex connection and 8.0 inputs
+	Maximal number of distinct input neurons (nu): 90.3323076923
+	Minimal number of distinct input neurons     : 0.387692307692
+	Compare with the effective chosen inDegree   : 8.0
+inputPop 11606 (11606,)
+post:  11606 (11606,)
+inputPop 11102 (11102,)
+post:  11102Minimal number of distinct input neurons     : 0.84
+	Compare with the effective chosen inDegree   : 25.0
+inputPop 60700 (60700,)
+post:  60700 (60700,)
+inputPop 62125 (62125,)
+post:  62125 (62125,)
+inputPop 61575 (61575,)
+post:  61575 (61575,)
+('num connections: ', 44198946)
+* GPi Inputs
+* connecting  MSN -> GPi with focused in connection and 2644.0 inputs
+	Maximal number of distinct input neurons (nu): 31848.5706294
+	Minimal number of distinct input neurons     : 151.65986014
+	Compare with the effective chosen inDegree   : 2644.0
+inputPop 3701600 (3701600,)
+post:  3701600 (3701600,)
+inputPop 3701600 (3701600,)
+post:  3701600 (3701600,)
+inputPop 3701600 (3701600,)
+post:  3701600 (3701600,)
+* connecting  STN -> GPi with diffuse ex connection and 8.0 inputs
+	Maximal number of distinct input neurons (nu): 90.3323076923
+	Minimal number of distinct input neurons     : 0.387692307692
+	Compare with the effective chosen inDegree   : 8.0
+inputPop 11606 (11606,)
+post:  11606 (11606,)
+inputPop 11102 (11102,)
+post:  11102Minimal number of distinct input neurons     : 0.84
+	Compare with the effective chosen inDegree   : 25.0
+inputPop 60700 (60700,)
+post:  60700 (60700,)
+inputPop 62125 (62125,)
+post:  62125 (62125,)
+inputPop 61575 (61575,)
+post:  61575 (61575,)
+('num connections: ', 44198912)
+* GPi Inputs
+* connecting  MSN -> GPi with focused in connection and 2644.0 inputs
+	Maximal number of distinct input neurons (nu): 31848.5706294
+	Minimal number of distinct input neurons     : 151.65986014
+	Compare with the effective chosen inDegree   : 2644.0
+inputPop 3701600 (3701600,)
+post:  3701600 (3701600,)
+inputPop 3701600 (3701600,)
+post:  3701600 (3701600,)
+inputPop 3701600 (3701600,)
+post:  3701600 (3701600,)
+* connecting  STN -> GPi with diffuse ex connection and 8.0 inputs
+	Maximal number of distinct input neurons (nu): 90.3323076923
+	Minimal number of distinct input neurons     : 0.387692307692
+	Compare with the effective chosen inDegree   : 8.0
+inputPop 11606 (11606,)
+post:  11606 (11606,)
+inputPop 11102 (11102,)
+post:  11102
+Jan 05 17:23:55 NodeManager::prepare_nodes [Info]: 
+    Preparing 299440 nodes for simulation.
+
+Jan 05 17:23:56 NodeManager::prepare_nodes [Info]: 
+    Preparing 299440 nodes for simulation.
+
+Jan 05 17:23:56 NodeManager::prepare_nodes [Info]: 
+    Preparing 299440 nodes for simulation.
+
+Jan 05 17:23:56 NodeManager::prepare_nodes [Info]: 
+    Preparing 299440 nodes for simulation.
+
+Jan 05 17:23:56 NodeManager::prepare_nodes [Info]: 
+    Preparing 299440 nodes for simulation.
+
+Jan 05 17:23:56 NodeManager::prepare_nodes [Info]: 
+    Preparing 299440 nodes for simulation.
+
+Jan 05 17:23:56 SimulationManager::resume [Info]: 
+    Number of local nodes: 299440
+    Simulaton time (ms): 2000
+    Number of OpenMP threads: 8
+    Number of MPI processes: 6
+
+Jan 05 17:23:56 SimulationManager::resume [Info]: 
+    Number of local nodes: 299440
+    Simulaton time (ms): 2000
+    Number of OpenMP threads: 8
+    Number of MPI processes: 6
+
+Jan 05 17:23:56 SimulationManager::resume [Info]: 
+    Number of local nodes: 299440
+    Simulaton time (ms): 2000
+    Number of OpenMP threads: 8
+    Number of MPI processes: 6
+
+Jan 05 17:23:56 SimulationManager::resume [Info]: 
+    Number of local nodes: 299440
+    Simulaton time (ms): 2000
+    Number of OpenMP threads: 8
+    Number of MPI processes: 6
+
+Jan 05 17:23:56 SimulationManager::resume [Info]: 
+    Number of local nodes: 299440
+    Simulaton time (ms): 2000
+    Number of OpenMP threads: 8
+    Number of MPI processes: 6
+
+Jan 05 17:23:56 SimulationManager::resume [Info]: 
+    Number of local nodes: 299440
+    Simulaton time (ms): 2000
+    Number of OpenMP threads: 8
+    Number of MPI processes: 6
+
+Jan 05 17:52:50 SimulationManager::resume [Info]: 
+    Simulation finished.
+
+Jan 05 17:52:50 SimulationManager::resume [Info]: 
+    Simulation finished.
+
+Jan 05 17:52:50 SimulationManager::resume [Info]: 
+    Simulation finished.
+
+Jan 05 17:52:50 SimulationManager::resume [Info]: 
+    Simulation finished.
+
+Jan 05 17:52:50 SimulationManager::resume [Info]: 
+    Simulation finished.
+
+Jan 05 17:52:50 SimulationManager::resume [Info]: 
+    Simulation finished.
+ (11102,)
+inputPop 11522 (11522,)
+post:  11522 (11522,)
+* connecting  GPe -> GPi with diffuse in connection and 23.0 inputs
+	Maximal number of distinct input neurons (nu): 23.5904895105
+	Minimal number of distinct input neurons     : 1.47440559441
+	Compare with the effective chosen inDegree   : 23.0
+inputPop 32494 (32494,)
+post:  32494 (32494,)
+inputPop 31710 (31710,)
+post:  31710 (31710,)
+inputPop 32382 (32382,)
+post:  32382 (32382,)
+* connecting  CMPf -> GPi with focused ex connection and 9.0 inputs
+	Maximal number of distinct input neurons (nu): 78.7832167832
+	Minimal number of distinct input neurons     : 0.601398601399
+	Compare with the effective chosen inDegree   : 9.0
+inputPop 12600 (12600,)
+post:  12600 (12600,)
+inputPop 12600 (12600,)
+post:  12600 (12600,)
+inputPop 12600 (12600,)
+post:  12600 (12600,)
+('num connections: ', 46089713)
+('connectBG_MC : ', 14754.550093889236)
+('num connections: ', 46089713)
+('Simulation : ', 1735.6081070899963)
+----- RESULTS -----
+* MSN - Rate: 0.0518103883006 Hz -> OK ( (11102,)
+inputPop 11522 (11522,)
+post:  11522 (11522,)
+* connecting  GPe -> GPi with diffuse in connection and 23.0 inputs
+	Maximal number of distinct input neurons (nu): 23.5904895105
+	Minimal number of distinct input neurons     : 1.47440559441
+	Compare with the effective chosen inDegree   : 23.0
+inputPop 32494 (32494,)
+post:  32494 (32494,)
+inputPop 31710 (31710,)
+post:  31710 (31710,)
+inputPop 32382 (32382,)
+post:  32382 (32382,)
+* connecting  CMPf -> GPi with focused ex connection and 9.0 inputs
+	Maximal number of distinct input neurons (nu): 78.7832167832
+	Minimal number of distinct input neurons     : 0.601398601399
+	Compare with the effective chosen inDegree   : 9.0
+inputPop 12600 (12600,)
+post:  12600 (12600,)
+inputPop 12600 (12600,)
+post:  12600 (12600,)
+inputPop 12600 (12600,)
+post:  12600 (12600,)
+('num connections: ', 46089883)
+('connectBG_MC : ', 14754.564503908157)
+('num connections: ', 46089883)
+('Simulation : ', 1735.6016190052032)
+----- RESULTS -----
+* MSN - Rate: 0.051584720121 Hz -> OK (0(11102,)
+inputPop 11522 (11522,)
+post:  11522 (11522,)
+* connecting  GPe -> GPi with diffuse in connection and 23.0 inputs
+	Maximal number of distinct input neurons (nu): 23.5904895105
+	Minimal number of distinct input neurons     : 1.47440559441
+	Compare with the effective chosen inDegree   : 23.0
+inputPop 32494 (32494,)
+post:  32494 (32494,)
+inputPop 31710 (31710,)
+post:  31710 (31710,)
+inputPop 32382 (32382,)
+post:  32382 (32382,)
+* connecting  CMPf -> GPi with focused ex connection and 9.0 inputs
+	Maximal number of distinct input neurons (nu): 78.7832167832
+	Minimal number of distinct input neurons     : 0.601398601399
+	Compare with the effective chosen inDegree   : 9.0
+inputPop 12600 (12600,)
+post:  12600 (12600,)
+inputPop 12600 (12600,)
+post:  12600 (12600,)
+inputPop 12600 (12600,)
+post:  12600 (12600,)
+('num connections: ', 46089742)
+('connectBG_MC : ', 14754.544403076172)
+('num connections: ', 46089742)
+('Simulation : ', 1735.5871438980103)
+----- RESULTS -----
+* MSN - Rate: 0.0514346949067 Hz -> OK (0 (11102,)
+inputPop 11522 (11522,)
+post:  11522 (11522,)
+* connecting  GPe -> GPi with diffuse in connection and 23.0 inputs
+	Maximal number of distinct input neurons (nu): 23.5904895105
+	Minimal number of distinct input neurons     : 1.47440559441
+	Compare with the effective chosen inDegree   : 23.0
+inputPop 32494 (32494,)
+post:  32494 (32494,)
+inputPop 31710 (31710,)
+post:  31710 (31710,)
+inputPop 32382 (32382,)
+post:  32382 (32382,)
+* connecting  CMPf -> GPi with focused ex connection and 9.0 inputs
+	Maximal number of distinct input neurons (nu): 78.7832167832
+	Minimal number of distinct input neurons     : 0.601398601399
+	Compare with the effective chosen inDegree   : 9.0
+inputPop 12600 (12600,)
+post:  12600 (12600,)
+inputPop 12600 (12600,)
+post:  12600 (12600,)
+inputPop 12600 (12600,)
+post:  12600 (12600,)
+('num connections: ', 46089859)
+('connectBG_MC : ', 14754.56504893303)
+('num connections: ', 46089859)
+('Simulation : ', 1735.674203157425)
+----- RESULTS -----
+* MSN - Rate: 0.0519074634392 Hz -> OK (0  (11102,)
+inputPop 11522 (11522,)
+post:  11522 (11522,)
+* connecting  GPe -> GPi with diffuse in connection and 23.0 inputs
+	Maximal number of distinct input neurons (nu): 23.5904895105
+	Minimal number of distinct input neurons     : 1.47440559441
+	Compare with the effective chosen inDegree   : 23.0
+inputPop 32494 (32494,)
+post:  32494 (32494,)
+inputPop 31710 (31710,)
+post:  31710 (31710,)
+inputPop 32382 (32382,)
+post:  32382 (32382,)
+* connecting  CMPf -> GPi with focused ex connection and 9.0 inputs
+	Maximal number of distinct input neurons (nu): 78.7832167832
+	Minimal number of distinct input neurons     : 0.601398601399
+	Compare with the effective chosen inDegree   : 9.0
+inputPop 12600 (12600,)
+post:  12600 (12600,)
+inputPop 12600 (12600,)
+post:  12600 (12600,)
+inputPop 12600 (12600,)
+post:  12600 (12600,)
+('num connections: ', 46089809)
+('connectBG_MC : ', 14754.553884983063)
+('num connections: ', 46089809)
+('Simulation : ', 1735.6009950637817)
+----- RESULTS -----
+* MSN - Rate: 0.0517208774584 Hz -> OK ( (11102,)
+inputPop 11522 (11522,)
+post:  11522 (11522,)
+* connecting  GPe -> GPi with diffuse in connection and 23.0 inputs
+	Maximal number of distinct input neurons (nu): 23.5904895105
+	Minimal number of distinct input neurons     : 1.47440559441
+	Compare with the effective chosen inDegree   : 23.0
+inputPop 32494 (32494,)
+post:  32494 (32494,)
+inputPop 31710 (31710,)
+post:  31710 (31710,)
+inputPop 32382 (32382,)
+post:  32382 (32382,)
+* connecting  CMPf -> GPi with focused ex connection and 9.0 inputs
+	Maximal number of distinct input neurons (nu): 78.7832167832
+	Minimal number of distinct input neurons     : 0.601398601399
+	Compare with the effective chosen inDegree   : 9.0
+inputPop 12600 (12600,)
+post:  12600 (12600,)
+inputPop 12600 (12600,)
+post:  12600 (12600,)
+inputPop 12600 (12600,)
+post:  12600 (12600,)
+('num connections: ', 46089741)
+('connectBG_MC : ', 14754.546031951904)
+('num connections: ', 46089741)
+('Simulation : ', 1735.5792541503906)
+----- RESULTS -----
+* MSN - Rate: 0.0513174483106 Hz -> OK (, 1)
+* FSI - Rate: 1.20987421384 Hz -> OK (0 , 20)
+* STN - Rate: 3.61041666667 Hz -> NO! (15.2 , 22.8)
+* GPe - Rate: 10.8742666667 Hz -> NO! (55.7 , 74.5)
+* GPi - Rate: 12.124047619 Hz -> NO! (59.1 , 79.5)
+-------------------
+******************
+[ 2.  5.]
+******************
+ , 1)
+* FSI - Rate: 1.19578616352 Hz -> OK (0 , 20)
+* STN - Rate: 3.63125 Hz -> NO! (15.2 , 22.8)
+* GPe - Rate: 10.8534666667 Hz -> NO! (55.7 , 74.5)
+* GPi - Rate: 12.0804761905 Hz -> NO! (59.1 , 79.5)
+-------------------
+******************
+[ 2.  5.]
+******************
+0 , 1)
+* FSI - Rate: 1.19811320755 Hz -> OK (0 , 20)
+* STN - Rate: 3.60041666667 Hz -> NO! (15.2 , 22.8)
+* GPe - Rate: 10.8482666667 Hz -> NO! (55.7 , 74.5)
+* GPi - Rate: 12.089047619 Hz -> NO! (59.1 , 79.5)
+-------------------
+******************
+[ 2.  5.]
+******************
+ , 1)
+* FSI - Rate: 1.18157232704 Hz -> OK (0 , 20)
+* STN - Rate: 3.66416666667 Hz -> NO! (15.2 , 22.8)
+* GPe - Rate: 10.8594666667 Hz -> NO! (55.7 , 74.5)
+* GPi - Rate: 12.0976190476 Hz -> NO! (59.1 , 79.5)
+-------------------
+******************
+[ 2.  5.]
+******************
+0 , 1)
+* FSI - Rate: 1.20188679245 Hz -> OK (0 , 20)
+* STN - Rate: 3.68333333333 Hz -> NO! (15.2 , 22.8)
+* GPe - Rate: 10.8612 Hz -> NO! (55.7 , 74.5)
+* GPi - Rate: 12.0852380952 Hz -> NO! (59.1 , 79.5)
+-------------------
+******************
+[ 2.  5.]
+******************
+0 , 1)
+* FSI - Rate: 1.18006289308 Hz -> OK (0 , 20)
+* STN - Rate: 3.74708333333 Hz -> NO! (15.2 , 22.8)
+* GPe - Rate: 10.8329333333 Hz -> NO! (55.7 , 74.5)
+* GPi - Rate: 12.0419047619 Hz -> NO! (59.1 , 79.5)
+-------------------
+******************
+[ 2.  5.]
+******************
+finish

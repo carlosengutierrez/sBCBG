@@ -63,7 +63,7 @@ interactive = False
 params = {'nbcpu':    %s,
           'nbCh' :    %d,
           'LG14modelID': %2d,
-          'whichTest': %s, # which test was used to generate the log
+          'whichTest': '%s', # which test was used to generate the log
           'nbMSN':    %f,
           'nbFSI':    %f,
           'nbSTN':    %f,
@@ -113,7 +113,7 @@ params = {'nbcpu':    %s,
 
   # #SBATCH --mem-per-cpu=1G changed for #SBATCH --mem-per-cpu=200M
   slurmOptions = ['#SBATCH --time='+testedParameters['durationH']+':'+testedParameters['durationMin']+':00 \n',
-                  '#SBATCH --partition=compute \n',
+                  '#SBATCH --partition=postproc1 \n',
                   '#SBATCH --mem-per-cpu=1G \n',
                   '#SBATCH --ntasks=1 \n',
                   '#SBATCH --cpus-per-task='+testedParameters['nbcpu']+' \n',
@@ -121,10 +121,11 @@ params = {'nbcpu':    %s,
                   '#SBATCH --input=none\n',
                   '#SBATCH --output="'+IDstring+'.out" \n',
                   '#SBATCH --error="'+IDstring+'.err" \n',
-                  '#SBATCH --mail-user=benoit.girard@isir.upmc.fr \n',
+                  '#SBATCH --mail-user=carlos.gutierrez@oist.jp \n',
                   '#SBATCH --mail-type=BEGIN,END,FAIL \n',
                   ]
 
+  moduleUse = ['module use /apps/unit/DoyaU/.modulefiles/ \n']
   moduleLoad = ['module load nest/2.10 \n']
 
   # write the script file
@@ -132,10 +133,11 @@ params = {'nbcpu':    %s,
   script = open('go.slurm','w')
   script.writelines(header)
   script.writelines(slurmOptions)
+  script.writelines(moduleUse)
   script.writelines(moduleLoad)
   #script.writelines('python testFullBG.py \n')
   #script.writelines('python testChannelBG.py \n')
-  script.writelines('python '+testedParameters['whichTest']+'.py \n')
+  script.writelines('time srun --mpi=pmi2 python '+testedParameters['whichTest']+'.py \n')
   script.close()
 
   # execute the script file
@@ -150,7 +152,7 @@ params = {'nbcpu':    %s,
 testedParameters={'durationH':    '04',
                   'durationMin':  '00',
                   'nbcpu':        '8',
-                  'whichTest':    'testChannelBG',
+                  'whichTest':    'testFullBG',#'testChannelBG',
                   'nbch': 8,
                   'lg14modelid':  9,
                   'nbmsn':2644.,

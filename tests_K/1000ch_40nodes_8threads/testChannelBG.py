@@ -165,8 +165,8 @@ def connectBG_MC(antagInjectionSite,antag):
 def checkAvgFR(showRasters=False,params={},antagInjectionSite='none',antag='',logFileName=''):
   nest.ResetKernel()
   dataPath='log/'
-  #print('nbcpu: ',params['nbcpu'])
-  nest.SetKernelStatus({'local_num_threads': int(params['nbcpu']) if ('nbcpu' in params) else 2, "data_path": dataPath})
+  print('nbcpu: ',params['nbcpu'])
+  nest.SetKernelStatus({'local_num_threads': int(params['nbcpu']),'data_path':dataPath})# if ('nbcpu' in params) else 2, "data_path": dataPath})
   initNeurons()
 
   offsetDuration = 1000.
@@ -216,12 +216,16 @@ def checkAvgFR(showRasters=False,params={},antagInjectionSite='none',antag='',lo
   #-------------------------
   # Simulation
   #-------------------------
-
-  print('num connections: ',nest.GetKernelStatus('num_connections'))
+  #print 'waiting ..... '
+  #time.sleep(300)
+  #print('num connections: ',nest.GetKernelStatus('num_connections'))
+  #nest.set_verbosity('M_INFO')
   start_time = time.time()
   nest.set_verbosity('M_INFO')
+  #print('num connections: ',nest.GetKernelStatus('num_connections'))
   nest.Simulate(simDuration+offsetDuration)
   print('Simulation : ',time.time()-start_time)
+  #print('num connections: ',nest.GetKernelStatus('num_connections'))
   score = 0
 
   text=[]

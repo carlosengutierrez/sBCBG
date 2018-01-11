@@ -1,0 +1,80 @@
+Job Information
+
+ JOB ID                    : 7115919
+ JOB NAME                  : my_job.sh
+ JOB TYPE                  : BATCH
+ JOB MODEL                 : NM
+ RETRY NUM                 : 0
+ SUB JOB NUM               : -
+ USER                      : k03437
+ GROUP                     : hp160266
+ RESOURCE UNIT             : common
+ RESOURCE GROUP            : small
+ PRIORITY                  : 90
+ SHELL                     : /bin/bash
+ COMMENT                   : 
+ LAST STATE                : SOT
+ STATE                     : EXT
+ PRM DATE                  : 2018/01/08 01:05:17
+ EXIT CODE                 : 0
+ SIGNAL NO                 : 0
+ PJM CODE                  : 0
+ REASON                    : -
+ MAIL SEND FLAG            : be--
+ MAIL ADDRESS              : k03437
+ STEP DEPENDENCY EXP       : -
+ STEP EXITING WAIT MODE    : -
+ FILE MASK                 : 0022
+ STANDARD OUT FILE         : /volume2/home/hp160266/k03437/sBCBG/2018_1_6_15_28_00000/my_job.sh.o7115919
+ STANDARD ERR FILE         : /volume2/home/hp160266/k03437/sBCBG/2018_1_6_15_28_00000/my_job.sh.e7115919
+ INFORMATION FILE          : /volume2/home/hp160266/k03437/sBCBG/2018_1_6_15_28_00000/my_job.sh.i7115919
+ ACCEPT DATE               : 2018/01/06 15:28:25
+ QUEUED DATE               : 2018/01/06 15:28:25
+ EXIT DATE                 : 2018/01/08 01:05:43
+ LAST HOLD USER            : 
+ HOLD NUM                  : 0
+ HOLD TIME                 : 00:00:00 (0)
+ JOB START DATE            : 2018/01/07 06:46:34
+ JOB END DATE              : 2018/01/08 01:05:17
+ STAGE IN START DATE       : 2018/01/07 02:30:07
+ STAGE IN END DATE         : 2018/01/07 02:30:31
+ STAGE IN SIZE             : 124.3 MB (124243152)
+ STAGE OUT START DATE      : 2018/01/08 01:05:29
+ STAGE OUT END DATE        : 2018/01/08 01:05:33
+ STAGE OUT SIZE            : 72.4 MB (72368648)
+ NODE NUM (REQUIRE)        : 40
+ CPU NUM (REQUIRE)         : 320
+ ELAPSE TIME (LIMIT)       : 23:50:00 (85800)
+ MEMORY SIZE (LIMIT)       : 14252.7 MiB (14945000000) <DEFAULT>
+ DISK SIZE (LIMIT)         : 14000.0 MB (14000000000) <DEFAULT>
+ CPU TIME (LIMIT)          : unlimited <DEFAULT>
+ PROC CPU LIMIT            : unlimited <DEFAULT>
+ PROC COREFILE LIMIT       : 0.0 MB (0) <DEFAULT>
+ PROC CREATE PROC LIMIT    : 1280 <DEFAULT>
+ PROC DATA LIMIT           : unlimited <DEFAULT>
+ PROC LOCKED MEMORY LIMIT  : unlimited <DEFAULT>
+ PROC MESSAGE QUEUE LIMIT  : unlimited <DEFAULT>
+ PROC OPEN FILES LIMIT     : 1024 <DEFAULT>
+ PROC PENDING SIGNAL LIMIT : unlimited <DEFAULT>
+ PROC PERMFILE LIMIT       : unlimited <DEFAULT>
+ PROC STACK LIMIT          : 14252.7 MiB (14945000000) <DEFAULT>
+ PROC VIRTUAL MEMORY LIMIT : unlimited <DEFAULT>
+ NODE NUM (ALLOC)          : 48:4x6x2
+ MEMORY SIZE (ALLOC)       : 14252.7 MiB (14945001472)
+ CPU NUM (ALLOC)           : 320
+ ELAPSE TIME (USE)         : 18:18:44 (65924)
+ NODE NUM (UNUSED)         : 0
+ NODE NUM (USE)            : 40
+ NODE ID (USE)             : 0x02130040 0x02130041 0x02130042 0x02130043 0x02130044 0x02130045 0x02130046 0x02130047 0x02150064 0x02150065 0x02150066 0x02150067 0x02150068 0x02150069 0x0215006A 0x0215006B 0x0215006C 0x0215006D 0x0215006E 0x0215006F 0x04130068 0x04130069 0x0413006A 0x0413006B 0x0413006C 0x0413006D 0x0413006E 0x0413006F 0x04150040 0x04150041 0x04150042 0x04150043 0x04150044 0x04150045 0x04150046 0x04150047 0x04150048 0x04150049 0x0415004A 0x0415004B 
+ TOFU COORDINATE (USE)     : (21,0,5) (21,0,5) (21,0,5) (21,0,5) (21,0,5) (21,0,5) (21,0,5) (21,0,5) (22,0,5) (22,0,5) (22,0,5) (22,0,5) (22,0,5) (22,0,5) (22,0,5) (22,0,5) (22,0,5) (22,0,5) (22,0,5) (22,0,5) (21,1,5) (21,1,5) (21,1,5) (21,1,5) (21,1,5) (21,1,5) (21,1,5) (21,1,5) (22,1,5) (22,1,5) (22,1,5) (22,1,5) (22,1,5) (22,1,5) (22,1,5) (22,1,5) (22,1,5) (22,1,5) (22,1,5) (22,1,5) 
+ MAX MEMORY SIZE (USE)     : 8524.2 MiB (8938184704)
+ CPU NUM (USE)             : 320
+ USER CPU TIME (USE)       : 6403023320 ms
+ SYSTEM CPU TIME (USE)     : 14659488930 ms
+ CPU TIME (TOTAL)          : 21062512250 ms
+ DISK SIZE (USE)           : -
+ I/O SIZE                  : 451.1 MB (451055240)
+ FILE I/O SIZE             : 408.4 MB (408313996)
+ EXEC INST NUM             : 0
+ EXEC SIMD NUM             : 171126777973736
+

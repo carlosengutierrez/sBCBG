@@ -133,6 +133,8 @@ def createMC_K(name,nbCh,fake=False,parrot=True):
         pg = nest.Create('poisson_generator',1)
         nest.SetStatus(pg,{'rate':rate[name]})
         gen_string = [pg[0]]*int(nbSim[name])
+        #for k in range(int(nbSim[name])):
+        #  gen_string.append(pg[0])    
         Pop[name].append(tuple(gen_string))
       #print 'not parrot : ',Pop[name]
     else:
@@ -140,7 +142,8 @@ def createMC_K(name,nbCh,fake=False,parrot=True):
         pg = nest.Create('poisson_generator',1)
         nest.SetStatus(pg,{'rate':rate[name]})
         gen_string = [pg[0]]*int(nbSim[name])
-        
+        #for k in range(int(nbSim[name])):
+        #  gen_string.append(pg[0])
         Fake[name].append(tuple(gen_string))
         Pop[name].append(nest.Create('parrot_neuron',int(nbSim[name])))
         nest.Connect(pre=Fake[name][i],post=Pop[name][i],conn_spec={'rule':'one_to_one'})
@@ -341,40 +344,156 @@ def connectMC_K(type,nameSrc,nameTgt,projType,inDegree,LCGDelays=True,gain=1.):
     inputPop, nTgtPop = np.array([]),np.array([])
     ch_counter = 0
     for tgtChannel in range(len(Pop[nameTgt])): # for each channel of the Target nucleus
+      #inputPop, nTgtPop = [],[]
+      #for nTgt in range(int(nbSim[nameTgt])): # for each neuron in this channel 
       inputTable = rnd.choice(int(nbSim[nameSrc]),size=int(inDegree)*int(nbSim[nameTgt]),replace=True)
+        #for i in inputTable:
+        #  inputPop.append(Pop[nameSrc][tgtChannel][i])
+        #  nTgtPop.append(Pop[nameTgt][tgtChannel][nTgt])
+      #inputPop=np.hstack((inputPop,np.array(Pop[nameSrc][tgtChannel])[inputTable]))
       inputPop=np.append(inputPop,np.array(Pop[nameSrc][tgtChannel])[inputTable])
       del inputTable
       x=np.arange(int(nbSim[nameTgt]))
       nTgt=np.repeat(x,int(inDegree))
       del x
+      #nTgtPop=np.hstack((nTgtPop,np.array(Pop[nameTgt][tgtChannel])[nTgt]))
       nTgtPop=np.append(nTgtPop,np.array(Pop[nameTgt][tgtChannel])[nTgt])
       del nTgt
       ch_counter+=1
       inputPop,nTgtPop = do_connect[ch_counter-1](inputPop,nTgtPop,recType,lRecType,W,delay)
+    #print 'inputPop',len(inputPop),inputPop.shape
+    #print 'post: ',len(nTgtPop),nTgtPop.shape
+    #k = 0
+    #bin_div=10
+    #bin_size=len(inputPop)/bin_div
+    #for hh in np.arange(bin_div):
+    #for r in lRecType:
+    #  w = W[r]
+    #  nest.Connect(pre=tuple(inputPop.astype('int')), post=tuple(nTgtPop.astype('int')),conn_spec='one_to_one',syn_spec={'receptor_type':recType[r],'weight':w,'delay':delay})
+    #k=(hh+1)*bin_size
+    #del inputPop
+    #del nTgtPop
  
   if projType=='diffuse': # if projections diffused, input connections are shared among each possible input channel equally
     inputPop, nTgtPop = np.array([]),np.array([])
     ch_counter = 0
     for tgtChannel in range(len(Pop[nameTgt])): # for each channel of the Target nucleus
+      #inputPop, nTgtPop = [],[]
+      #for nTgt in range(int(nbSim[nameTgt])): # for each neuron in this channel         
       n = int(inDegree)/int(len(Pop[nameSrc]))
       r = float(inDegree)/float(len(Pop[nameSrc])) - n
+
       my_rand = rnd.rand(len(Pop[nameSrc]))
       nbInPerChannel = np.zeros(len(Pop[nameSrc])).astype('i')
       nbInPerChannel[np.argwhere(my_rand  < r)]= n+1
       nbInPerChannel[np.argwhere(my_rand  >= r)]= n
-      
+
       for srcChannel in range(len(Pop[nameSrc])):
+        #if rnd.rand() < r:
+        #  nbInPerChannel = n + 1
+        #else:
+        #  nbInPerChannel = n
         inputTable = rnd.choice(int(nbSim[nameSrc]),size=nbInPerChannel[srcChannel]*int(nbSim[nameTgt]),replace=True)
+        #inputPop=np.hstack((inputPop,np.array(Pop[nameSrc][srcChannel])[inputTable]))
         inputPop=np.append(inputPop,np.array(Pop[nameSrc][srcChannel])[inputTable])
         del inputTable
         x=np.arange(int(nbSim[nameTgt]))
         nTgt=np.repeat(x,nbInPerChannel[srcChannel])
         del x
+        #nTgtPop=np.hstack((nTgtPop,np.array(Pop[nameTgt][tgtChannel])[nTgt]))
         nTgtPop=np.append(nTgtPop,np.array(Pop[nameTgt][tgtChannel])[nTgt])
         del nTgt
       ch_counter+=1 
       inputPop,nTgtPop = do_connect[ch_counter-1](inputPop,nTgtPop,recType,lRecType,W,delay) 
-   
+        #  for i in inputTable:
+        #    inputPop.append(Pop[nameSrc][srcChannel][i])
+        #    nTgtPop.append(Pop[nameTgt][tgtChannel][nTgt])
+      
+    #print 'inputPop',len(inputPop),inputPop.shape
+    #print 'post: ',len(nTgtPop),nTgtPop.shape
+    #k = 0
+    #bin_div=10
+    #bin_size=len(inputPop)/bin_div
+    #for hh in np.arange(bin_div):
+    #for r in lRecType:
+    #  w = W[r]
+    #  nest.Connect(pre=tuple(inputPop.astype('int')), post=tuple(nTgtPop.astype('int')),conn_spec='one_to_one',syn_spec={'receptor_type':recType[r],'weight':w,'delay':delay})
+    #k=(hh+1)*bin_size
+    #del inputPop
+    #del nTgtPop
+
+'''
+def connectMC_K(type,nameSrc,nameTgt,projType,inDegree,LCGDelays=True,gain=1.):
+  print "* connecting ",nameSrc,"->",nameTgt,"with",projType,type,"connection and",inDegree,"inputs"
+
+  # prepare receptor type lists:
+  if type == 'ex':
+    lRecType = ['AMPA','NMDA']
+  elif type == 'AMPA':
+    lRecType = ['AMPA']
+  elif type == 'NMDA':
+    lRecType = ['NMDA']
+  elif type == 'in':
+    lRecType = ['GABA']
+  else:
+    print "Undefined connexion type:",type
+
+  # compute the global weight of the connection, for each receptor type:
+  W = computeW(lRecType,nameSrc,nameTgt,inDegree,gain,verbose=True)
+
+  # determine which transmission delay to use:
+  if LCGDelays:
+    delay = tau[nameSrc+'->'+nameTgt]
+  else:
+    delay = 1.
+
+  # To ensure that for excitatory connections, Tgt neurons receive AMPA and NMDA projections from the same Src neurons,
+  # we have to handle the "indegree" connectivity ourselves:
+  if projType =='focused':
+    for tgtChannel in range(len(Pop[nameTgt])): # for each channel of the Target nucleus
+      inputTable = rnd.choice(int(nbSim[nameSrc]),size=int(inDegree)*int(nbSim[nameTgt]),replace=True)#False)
+      #inputTable = rnd.randint(0,int(nbSim[nameSrc]),size=int(inDegree)*int(nbSim[nameTgt]))
+      inputPop = np.array(Pop[nameSrc][tgtChannel])[inputTable]
+      x = np.arange(int(nbSim[nameTgt]))
+      nTgt = np.repeat(x,int(inDegree))
+      nTgtPop = np.array(Pop[nameTgt][tgtChannel])[nTgt]
+      print 'inputPop',len(inputPop),inputPop.shape
+      print 'post: ',len(nTgtPop),nTgtPop.shape
+      for r in lRecType:
+        w = W[r]
+        nest.Connect(pre=tuple(inputPop.astype('int')), post=tuple(nTgtPop.astype('int')),conn_spec='one_to_one',syn_spec={'receptor_type':recType[r],'weight':w,'delay':delay})
+      #del inputTable
+      #del inputPop
+      #del x
+      #del nTgt
+      #del nTgtPop
+
+  if projType=='diffuse': # if projections diffused, input connections are shared among each possible input channel equally
+    for tgtChannel in range(len(Pop[nameTgt])): # for each channel of the Target nucleus
+      n = int(inDegree)/int(len(Pop[nameSrc]))
+      r = float(inDegree)/float(len(Pop[nameSrc])) - n
+      inputPop, nTgtPop = np.array([]),np.array([])
+      for srcChannel in range(len(Pop[nameSrc])):
+        if rnd.rand() < r:
+          nbInPerChannel = n + 1
+        else:
+          nbInPerChannel = n
+        inputTable = rnd.choice(int(nbSim[nameSrc]),size=nbInPerChannel*int(nbSim[nameTgt]),replace=True)
+        inputPop = np.hstack((inputPop,np.array(Pop[nameSrc][srcChannel])[inputTable]))
+        x = np.arange(int(nbSim[nameTgt]))
+        nTgt = np.repeat(x,int(nbInPerChannel))
+        nTgtPop = np.hstack((nTgtPop,np.array(Pop[nameTgt][tgtChannel])[nTgt]))
+      print 'inputPop',len(inputPop),inputPop.shape
+      print 'post: ',len(nTgtPop),nTgtPop.shape
+      for r in lRecType:
+        w = W[r]
+        nest.Connect(pre=tuple(inputPop.astype('int')), post=tuple(nTgtPop.astype('int')),conn_spec='one_to_one',syn_spec={'receptor_type':recType[r],'weight':w,'delay':delay})
+      #del inputTable
+      #del inputPop
+      #del x
+      #del nTgt
+      #del nTgtPop
+'''      
 #-------------------------------------------------------------------------------
 # computes the weight of a connection, based on LG14 parameters
 #-------------------------------------------------------------------------------
